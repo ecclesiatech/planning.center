@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 
+import "@planningcenter/icons/css/symbol.css";
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
