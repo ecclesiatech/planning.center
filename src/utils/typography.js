@@ -2,7 +2,8 @@ import Typography from 'typography'
 import noriegaTheme from "typography-theme-noriega";
 require("typeface-lato");
 
-noriegaTheme.baseFontSize = "18px"; // was 18px
+noriegaTheme.baseFontSize = "16px"; // was 18px
+noriegaTheme.scaleRatio = 2.625;
 
 noriegaTheme.overrideThemeStyles = () => ({
   'h1,h2,h3': {
