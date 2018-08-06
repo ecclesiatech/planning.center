@@ -2,7 +2,7 @@
 
 ## Set up development
 ```bash
-npm install --global gatsby-cli
+npm install --global gatsby-cli@next
 cd ~/Code/planningcenter/
 git clone git@github.com:planningcenter/planning.center.git
 cd planning.center
