@@ -1,15 +1,22 @@
 import Typography from 'typography'
-import Wordpress2016 from 'typography-theme-wordpress-2016'
+import noriegaTheme from "typography-theme-noriega";
+require("typeface-lato");
 
-Wordpress2016.overrideThemeStyles = () => ({
-  'a.gatsby-resp-image-link': {
-    boxShadow: 'none',
+noriegaTheme.baseFontSize = "18px"; // was 18px
+
+noriegaTheme.overrideThemeStyles = () => ({
+  'h1,h2,h3': {
+    fontWeight: '900',
   },
+  'p': {
+    lineHeight: '1.6',
+  },
+  'body': {
+    color: '#333333',
+  }
 })
 
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(noriegaTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
