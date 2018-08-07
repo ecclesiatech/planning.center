@@ -1,8 +1,6 @@
-@charset "utf-8";
-
 // Set your brand colors
 $blue: #3B78FF;
-$beige-lighter: #EFF0EB;
+$white: #FFFFFF;
 $dry-concrete: #E3E6EB;
 $midnight: #333333;
 $wet-concrete: #6A7183;
@@ -17,16 +15,17 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
 // Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+// There are some styles in `base` that clobber typogrphy.js
 // @import "../../node_modules/bulma/sass/base/_all.sass";
-// @import "../../node_modules/bulma/sass/components/_all.sass";
-// @import "../../node_modules/bulma/sass/elements/_all.sass";
-// @import "../../node_modules/bulma/sass/grid/_all.sass";
-// @import "../../node_modules/bulma/sass/layout/_all.sass";
-// @import "../../node_modules/bulma/sass/utilities/_all.sass";
-@import "~bulma"
+@import "../../node_modules/bulma/sass/components/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+// @import "~bulma"

@@ -12,3 +12,5 @@ export default function({ symbol: s, ...platformProps }) {
     <Symbol symbol={`${icons[collection]}#${symbol}`} {...platformProps} />
   );
 }
+
+//EX: <Icon symbol="apps#services-app" />

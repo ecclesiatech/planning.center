@@ -9,6 +9,8 @@ import Footer from "../components/Footer";
 import "@planningcenter/icons/css/symbol.css";
 
 import "../styles/bulma-import.scss";
+import "../styles/minireset-modified.scss";
+
 import styles from "../styles/global-layout.module.scss";
 
 class Template extends React.Component {
