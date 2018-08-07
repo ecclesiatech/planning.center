@@ -3,8 +3,8 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 
-import NavBar from "../components/global-navbar";
-import Footer from "../components/global-footer";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 import "@planningcenter/icons/css/symbol.css";
 

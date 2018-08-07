@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
+// import "../../styles/navbar.scss";
+import styles from "../../styles/navbar.module.scss"
 
 const NavBar = () => {
-  return <nav className="navbar is-fixed-top" aria-label="main navigation">
+  return <nav className={styles.navbar} aria-label="main navigation">
       <div className="navbar-brand">
         <button className="button navbar-burger" data-target="navMenu">
           <span />
