@@ -9,6 +9,7 @@
   "dependencies": {
     "@planningcenter/icons": "^3.0.0-9",
     "@planningcenter/symbol": "^2.0.3",
+    "bulma": "^0.7.1",
     "gatsby": "next",
     "gatsby-plugin-feed": "next",
     "gatsby-plugin-google-analytics": "next",

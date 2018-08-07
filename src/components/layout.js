@@ -8,29 +8,21 @@ import Footer from "../components/Footer";
 
 import "@planningcenter/icons/css/symbol.css";
 
+import "../styles/bulma-import.scss";
+import styles from "../styles/global-layout.module.scss";
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    return (
-      <div className="wrapper">
-        <div      
-          style={{
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <NavBar />
-          {header}
-          {children}
-        </div>
-        <div><Footer/></div>
-      </div>
-    )
+    return <div className="">
+        <NavBar />
+        {header}
+        <main className={styles.container}>{children}</main>
+      <Footer/>
+      </div>;
   }
 }
 
