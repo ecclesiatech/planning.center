@@ -10,6 +10,7 @@ import "@planningcenter/icons/css/symbol.css";
 
 import "../styles/bulma-import.scss";
 import "../styles/minireset-modified.scss";
+import "../styles/global-helpers.scss";
 
 import styles from "../styles/global-layout.module.scss";
 
@@ -22,7 +23,7 @@ class Template extends React.Component {
     return <div className="">
         <NavBar />
         {header}
-        <main className={styles.container}>{children}</main>
+        <main className="container">{children}</main>
       <Footer/>
       </div>;
   }

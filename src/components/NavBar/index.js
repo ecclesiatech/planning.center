@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Icon from "../../components/icon";
 import PCLogoColor from "../../components/icons/planning-center-logo-color";
 import styles from "../../styles/navbar.module.scss"
 
 const NavBar = () => {
   return <nav className={[styles.navbar, "is-fixed-top"].join(" ")} aria-label="main navigation">
-      <div className={styles.container}>
+      <div className="container">
         <div className="navbar-brand">
           <button className="button navbar-burger" data-target="navMenu">
             <span />

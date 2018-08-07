@@ -14,17 +14,18 @@ class BlogIndex extends React.Component {
     return <Layout location={this.props.location}>
         <Helmet title={siteTitle} />
 
-        <section className="hero level">
-          <div className="level-left">
-            <header>
-              <h1>Ministry doesn't have to be so hard. </h1>
-              <h2>We equip you with the tools you need to focus on what matters: your ministry. </h2>
-            </header>
-            <button className="button is-primary">Start free trial</button>
-            <button className="button is-reverse">Plans and pricing</button>
+        <section className="hero">
+          <div className="hero-body">
+            <div className="level-left">
+              <header>
+                <h1>Ministry doesn't have to be so hard. </h1>
+                <h2>We equip you with the tools you need to focus on what matters: your ministry. </h2>
+              </header>
+              <button className="button is-primary">Start free trial</button>
+              <button className="button is-reverse">Plans and pricing</button>
+            </div>
+            <div className="level-right">IMAGE</div>
           </div>
-          <div className="level-right">IMAGE</div>
-
         </section>
 
       </Layout>;
