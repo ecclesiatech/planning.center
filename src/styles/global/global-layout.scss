@@ -82,3 +82,21 @@ table th {
     text-align: left;
     vertical-align: top;
 }
+
+//More Specific
+.topbar{
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-is-top{
+    
+}
+
+.navbar-is-scrolling{
+    position: sticky;
+    z-index: 9999;
+
+    .topbar{
+        background: #fff;
+    }
+}

@@ -4,7 +4,7 @@ import {PCLogoColor} from "../../components/icons/planning-center-icons";
 import styles from "../../styles/navbar.module.scss"
 
 const NavBar = () => {
-  return <nav className={[styles.navbar, "is-fixed-top"].join(" ")} aria-label="main navigation">
+  return <nav className={[styles.navbar, "topbar is-fixed-top"].join(" ")} aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
           <button className="button navbar-burger" data-target="navMenu">

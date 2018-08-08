@@ -33,7 +33,7 @@ class ServicesIndex extends React.Component {
           </div>
         </section>
 
-        <main className="container">
+        <main className="container"  style={{height: '150vh'}}>
           <section>
             <h1> Planning Center Services </h1>
             <p>Just setting up and showing off icons...</p>

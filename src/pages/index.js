@@ -29,7 +29,7 @@ class BlogIndex extends React.Component {
             <div className="level-right">IMAGE</div>
           </div>
         </section>
-
+        <section style={{height: '150vh'}}></section>
       </Layout>;
   }
 }
