@@ -30,13 +30,13 @@ class Template extends React.Component {
     let header
 
     return <div className="">
-      <div inverse toggleable style={{ top: 0 }} className={this.state.isTop ? 'navbar-is-top' : 'navbar-is-scrolling'}>
-        <NavBar />
-      </div>
-      {header}
-      {children}
-      <Footer/>
-    </div>;
+        <div inverse="true" toggleable="true" style={{ top: 0 }} className={this.state.isTop ? "navbar-is-top" : "navbar-is-scrolling"}>
+          <NavBar />
+        </div>
+        {header}
+        {children}
+        <Footer />
+      </div>;
   }
 }
 
