@@ -1,18 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { rhythm, scale } from '../utils/typography'
-
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 import "@planningcenter/icons/css/symbol.css";
 
 import "../styles/bulma-import.scss";
-import "../styles/minireset-modified.scss";
-import "../styles/global-helpers.scss";
 
-import styles from "../styles/global-layout.module.scss";
+import "../styles/global/_all.scss";
 
 class Template extends React.Component {
   render() {
@@ -21,11 +17,11 @@ class Template extends React.Component {
     let header
 
     return <div className="">
-        <NavBar />
-        {header}
-        <main className="container">{children}</main>
+      <NavBar />
+      {header}
+      {children}
       <Footer/>
-      </div>;
+    </div>;
   }
 }
 

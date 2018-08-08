@@ -1,44 +1,48 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import PCLogoMono from "../../components/icons/planning-center-logo-mono";
+import {PCLogoColorReversed} from "../../components/icons/planning-center-icons";
+import {IconFacebook} from "../../components/icons/planning-center-icons";
+import {IconInstagram} from "../../components/icons/planning-center-icons";
+import {IconTwitter} from "../../components/icons/planning-center-icons";
+import {IconYouTube} from "../../components/icons/planning-center-icons";
 import styles from "../../styles/footer.module.scss";
 
 const Footer = () => {
   return <footer className={[styles.footer, "bd-main"].join(" ")}>
 
     <div className="container">
-      <div className="columns">
+      <div className="d-f@palm">
 
-        <div className="column columns">
-          <Link className="column" to="/">
-            <PCLogoMono className={styles.footerLogo} />
+        <div className="f-1 d-f@palm">
+          <Link to="/">
+            <PCLogoColorReversed className={styles.logo}/>
           </Link>
-          <ul className="field is-grouped social-media column">
+          <ul className={[styles.social, "field is-grouped social-media f-1"].join(" ")}>
             <li>
               <Link className="" to="http://twitter.com">
-                TW
+                <IconTwitter/>
               </Link>
             </li>
             <li>
               <Link className="" to="http://facebook.com">
-                FB
+                <IconFacebook/>
               </Link>
             </li>
             <li>
               <Link className="" to="http://instagram">
-                IG
+                <IconInstagram/>
               </Link>
             </li>
             <li>
               <Link className="" to="http://youtube">
-                YT
+                <IconYouTube/>
               </Link>
             </li>
           </ul>
         </div>
 
-          <div className="field is-grouped column">
-            <ul className="control inline-links d-f" style={{textAlign: 'right'}}>
+          <div className="field is-grouped d-f@palm">
+            <ul className={[styles.links, "field is-grouped social-media f-1"].join(" ")}>
               <li>
                 <Link className="" to="/api">
                   API

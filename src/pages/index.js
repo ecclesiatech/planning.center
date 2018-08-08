@@ -4,7 +4,6 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 
 import Layout from "../components/layout";
-import { rhythm } from "../utils/typography";
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,7 +11,10 @@ class BlogIndex extends React.Component {
     const posts = get(this, "props.data.allMarkdownRemark.edges");
 
     return <Layout location={this.props.location}>
-        <Helmet title={siteTitle} />
+        <Helmet>
+          <title>{siteTitle}</title>
+          <body className="home" />
+        </Helmet>
 
         <section className="hero">
           <div className="hero-body">

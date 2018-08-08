@@ -1,11 +1,46 @@
 .footer{
   background: #192338;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .footer a{
   color: #fff;
 }
 
-.footerLogo{
-  fill: #fff;
+.footer *{
+  align-items: center;
+}
+
+.footer a:hover{
+  color: #96B7FF;
+}
+
+.logo{
+  margin-right: 42px;
+}
+
+.social{
+  li{
+    display: inline-block;
+  }
+  a{
+    display: block;
+    min-width: 48px;
+    text-align: center;
+  }
+  svg{
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    opacity: 0.6;
+
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+}
+
+.links li{
+    margin-left: 1em;
 }

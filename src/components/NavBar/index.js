@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import PCLogoColor from "../../components/icons/planning-center-logo-color";
+import {PCLogoColor} from "../../components/icons/planning-center-icons";
 import styles from "../../styles/navbar.module.scss"
 
 const NavBar = () => {
