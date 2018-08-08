@@ -1,6 +1,39 @@
 .app-page .hero{
   color: #fff;
+  @media screen and (min-width: 768px){
+    padding-top: 110px;
+    position: relative;
+    margin: -68px auto 0;
+  }
 }
+
+//The navbar state on product pages BEFORE scrolling
+.app-page .navbar-is-top{
+  @media screen and (min-width: 768px){
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    
+    .navbar-start > a,
+    .has-dropdown > a{
+      color: #fff;
+      border-radius: 3px;
+
+      &:hover{
+        background: rgba(0,0,0,0.1)
+      }
+    }
+  }
+}
+
+.app-page .navbar-is-scrolling{
+  @media screen and (min-width: 768px){
+    position: relative;
+    z-index: 1;
+  }
+}
+
+//The navbar state on product pages AFTER scrolling
 
 .services .hero{
   background: #6baf3d; /* Old browsers */
@@ -8,3 +41,4 @@
   background: -webkit-linear-gradient(-45deg, #6baf3d 0%,#669c33 99%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #6baf3d 0%,#669c33 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+

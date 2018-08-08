@@ -19,7 +19,7 @@ const NavBar = () => {
         </div>
 
         <div className="navbar-menu">
-          <div className={[styles.navbarTextOptions, "navbar-start"].join(" ")}>
+          <div className={[styles.navbarTextOptions, "navbar-start navbar-menu-container"].join(" ")}>
             <div className="navbar-item has-dropdown is-hoverable">
               <Link className="navbar-item" to="/">
                 Products

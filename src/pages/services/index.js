@@ -1,6 +1,7 @@
 import React from "react";
 import get from "lodash/get";
 import Helmet from "react-helmet";
+import heroImage from "./services.svg";
 
 import Layout from "../../components/layout";
 import Icon from "../../components/icon";
@@ -8,7 +9,6 @@ import Icon from "../../components/icon";
 class ServicesIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const posts = get(this, "props.data.allMarkdownRemark.edges");
 
     return <Layout location={this.props.location}>
         <Helmet>
@@ -17,19 +17,21 @@ class ServicesIndex extends React.Component {
         </Helmet>
         
         <section className="hero">
-          <div className="hero-body container d-f">
-            <div className="">
-              <header>
-                <h2>ServicesLogo</h2>
-                <h1>Lead a quality service with a unified team.</h1>
-              </header>
-              <ul className="inline-links" style={{display: 'block'}}>
-                <li><button className="button">Start free trial</button></li>
-                <li><button className="button">Plans and pricing</button></li>
-              </ul>
-            </div>
+          <div className="hero-body container">
+            <div className="columns is-6">
+              <div className="column">
+                <header>
+                  <h2>ServicesLogo</h2>
+                  <h1>Lead a quality service with a unified team.</h1>
+                </header>
+                <ul className="inline-links" style={{display: 'block'}}>
+                  <li><button className="button">Start free trial</button></li>
+                  <li><button className="button">Plans and pricing</button></li>
+                </ul>
+              </div>
 
-            <div className="level-right">IMAGE</div>
+            <div className="column" style={{ justify: 'flex-end', textAlign: 'right' }}><img src={heroImage} style={{height: '470px', display: 'inline-block', margin: '0'}} alt="" /></div>
+            </div>
           </div>
         </section>
 
