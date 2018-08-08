@@ -28,4 +28,13 @@ $input-shadow: none;
 @import "../../node_modules/bulma/sass/elements/_all.sass";
 @import "../../node_modules/bulma/sass/grid/_all.sass";
 @import "../../node_modules/bulma/sass/layout/_all.sass";
-// @import "~bulma"
+// @end "~bulma"
+
+// Bulma overrides
+.container {
+  @media screen and (min-width: 1472px){
+      max-width: 1200px;
+      width: 1200px;
+  }
+}
+// @end Bulma overrides    

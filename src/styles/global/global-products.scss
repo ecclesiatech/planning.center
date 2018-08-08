@@ -7,33 +7,13 @@
   }
 }
 
-//The navbar state on product pages BEFORE scrolling
-.app-page .navbar-is-top{
+.app-page .hero-body{
   @media screen and (min-width: 768px){
-    position: relative;
-    z-index: 1;
-    font-weight: 700;
-    
-    .navbar-start > a,
-    .has-dropdown > a{
-      color: #fff;
-      border-radius: 3px;
-
-      &:hover{
-        background: rgba(0,0,0,0.1)
-      }
+    h1{
+      font-size: 5rem;
     }
   }
 }
-
-.app-page .navbar-is-scrolling{
-  @media screen and (min-width: 768px){
-    position: relative;
-    z-index: 1;
-  }
-}
-
-//The navbar state on product pages AFTER scrolling
 
 .services .hero{
   background: #6baf3d; /* Old browsers */

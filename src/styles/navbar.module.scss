@@ -1,10 +1,12 @@
 .navbar{
   min-height: 68px;
+
+  a{text-decoration: none !important;}
 }
 
 .navbarTextOptions{
   @media screen and (min-width: 768px){
       flex: 1;
-      justify-content: center;
+      justify-content: center !important;
   }  
 }

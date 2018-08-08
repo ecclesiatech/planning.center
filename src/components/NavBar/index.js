@@ -5,7 +5,7 @@ import styles from "../../styles/navbar.module.scss"
 import Icon from "../icon";
 
 const NavBar = () => {
-  return <nav className={[styles.navbar, "topbar is-fixed-top has-shadow is-spaced"].join(" ")} aria-label="main navigation">
+  return <nav className={[styles.navbar, "topbar is-fixed-top has-shadow is-spaced level"].join(" ")} aria-label="main navigation">
     <div className="container d-f@palm">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
@@ -130,18 +130,9 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="field is-grouped">
-                <p className="control">
-                  <Link className="button is-primary is-outlined" to="/contact">
-                    Sign up
-                  </Link>
-                  <Link className="button is-primary is-outlined" to="/contact">
-                    Log in
-                  </Link>
-                </p>
-              </div>
-            </div>
+            <Link className="button is-text navbar-item" to="/login">
+              Log in
+            </Link>
           </div>
         </div>
       </div>

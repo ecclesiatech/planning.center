@@ -100,3 +100,33 @@ table th {
         background: #fff;
     }
 }
+
+//The navbar state on product pages BEFORE scrolling
+.app-page .navbar-is-top{
+    a{text-decoration: none !important;}
+  @media screen and (min-width: 768px){
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+
+    .navbar-start > a,
+    .has-dropdown > a,
+    .navbar-end > a{
+      color: #fff;
+      border-radius: 3px;
+
+      &:hover{
+        background: rgba(0,0,0,0.1)
+      }
+    }
+  }
+}
+
+.app-page .navbar-is-scrolling{
+  @media screen and (min-width: 768px){
+    position: sticky;
+    z-index: 9999;
+  }
+}
+
+//The navbar state on product pages AFTER scrolling
