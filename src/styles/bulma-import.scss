@@ -37,4 +37,8 @@ $input-shadow: none;
       width: 1200px;
   }
 }
+button.is-medium,
+button.is-large{
+  border-radius: 6px;
+}
 // @end Bulma overrides    

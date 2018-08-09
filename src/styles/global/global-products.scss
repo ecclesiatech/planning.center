@@ -5,12 +5,39 @@
     position: relative;
     margin: -68px auto 0;
   }
+
+  .hero-body{
+    @media screen and (min-width: 768px){
+      padding-bottom: 80px;
+    }    
+  }
+
+  .hero-buttons{
+    .button{
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1;
+      height: 53px;
+      padding-left: 24px;
+      padding-right: 24px;      
+    }
+
+    .is-white{
+      color: #5a9424;
+    }
+
+    .is-black{
+      background: rgba(0,0,0,0.15);
+      margin-left: 12px;
+    }
+  }
 }
 
 .app-page .hero-body{
+
   @media screen and (min-width: 768px){
     h1{
-      font-size: 5rem;
+      font-size: 4.2rem;
     }
   }
 }
