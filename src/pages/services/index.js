@@ -10,8 +10,8 @@ import Icon from "../../components/icon";
 class ServicesIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const appName = "services"
-
+    const appName = "services";
+    
     return (
       <Layout location={this.props.location}>
         {layoutState => (
@@ -28,7 +28,7 @@ class ServicesIndex extends React.Component {
                 }
               />
             </Helmet>
-
+            {/*!layoutState.isTop ? <AppSubNavBar /> : ''*/}
             <section className="hero">
               <div className="hero-body container">
                 <div className="columns is-6">
@@ -77,11 +77,16 @@ class ServicesIndex extends React.Component {
                     />
                   </div>
                 </div>
-              </div>
-              <AppSubNavBar />
+              </div> 
+              <AppSubNavBar /> 
+              {/*
+                layoutState.isTop 
+                ? <AppSubNavBar /> 
+                : <div className="app-page-nav__placeholder"></div>
+              */}
             </section>
 
-            <main className="container" style={{ height: "150vh" }}>
+            <main className="container" style={{ height: "150vh", paddingTop: "150px" }}>
               <section>
                 <h1> Planning Center Services </h1>
                 <p>Just setting up and showing off icons...</p>

@@ -1,5 +1,11 @@
 .navbar{
+  position: relative;
+  z-index: 9999;
+  font-weight: 700;
+  width: 100%;
+  top: 0;
   min-height: 68px;
+  margin-bottom: 0 !important;
 
   a{text-decoration: none !important;}
 }

@@ -1,24 +1,30 @@
-html, body{
+$services-color: #5a992c;
+@mixin app-color($color-main) {
+  color: $color-main
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 html {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    min-width: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-size-adjust: 100%;
 }
 
-body{
+body {
   height: 100%;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -29,7 +35,7 @@ footer,
 header,
 hgroup,
 section {
-    display: block;
+  display: block;
 }
 
 body,
@@ -37,95 +43,209 @@ button,
 input,
 select,
 textarea {
-    font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-    color: #333;
+  color: #333;
 }
 
 a {
-    color: #3B78FF;
-    cursor: pointer;
-    text-decoration: none;
+  color: #3b78ff;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 a strong {
-    color: currentColor;
+  color: currentColor;
 }
 
 a:hover {
-    color: #0F49CA;
+  color: #0f49ca;
 }
 
 img {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 span {
-    font-style: inherit;
-    font-weight: inherit;
+  font-style: inherit;
+  font-weight: inherit;
 }
 
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 table td,
 table th {
-    text-align: left;
-    vertical-align: top;
+  text-align: left;
+  vertical-align: top;
 }
 
 //TOPBAR
-.topbar{
-    transition: all 0.2s ease-in-out;
+.navbar-brand{
+  min-height: 1em;
 }
 
-.navbar-is-top{
-    
+.topbar {
+  transition: background-color 0.3s ease-in-out;
+  background-color: rgba(251, 251, 251, 0);
+  .pc-logo-color{
+    width: 196px;
+    height: 28px;
+  }
+  .pc-logo-mono{
+    // hide the mono logo
+    display: none;
+    fill: #fff;
+    width: 163px;
+    height: 24px;    
+  }
 }
 
-.navbar-is-scrolling{
+.navbar-is-scrolling {
+  nav.topbar {
     position: sticky;
-    z-index: 9999;
+    background-color: rgba(251,251,251,1);
+  }
+}
 
-    .topbar{
-        background: #fff;
-    }
+//The navbar state on product pages 
+.app-page .topbar{
+  .pc-logo-color{
+    // hide the color logo
+    display: none;
+  }
+  .pc-logo-mono{
+    // show the mono logo
+    display: block;
+  }  
 }
 
 //The navbar state on product pages BEFORE scrolling
-.app-page .navbar-is-top{
-  @media screen and (min-width: 768px){
-    position: relative;
-    z-index: 1;
-    font-weight: 700;
-
+.app-page.navbar-is-top .topbar{
+  @media screen and (min-width: 768px) {
     .navbar-start > a,
     .has-dropdown > a,
-    .navbar-end > a{
+    .navbar-end > a {
       color: #fff;
       border-radius: 3px;
 
-      &:hover{
-        background: rgba(0,0,0,0.1)
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
       }
     }
   }
 }
 
-.app-page .navbar-is-scrolling{
-  @media screen and (min-width: 768px){
-    position: sticky;
-    z-index: 9999;
+//The navbar state on product pages AFTER scrolling
+.app-page.navbar-is-scrolling .topbar {
+  .navbar-menu-container > a,
+  .has-dropdown > a,
+  .navbar-end > a{
+    font-size: 14px;
+    color: rgba(105, 106, 130, 0.9)
+  }
+  background: #fbfbfb;
+  top: 0;
+  height: 55px;
+  min-height: 20px;
+
+  .pc-logo-mono{
+    fill: rgba(106, 113, 131, 0.7);
+    width: 117px;
+    height: 18px;
   }
 }
 
-//The navbar state on product pages AFTER scrolling
+//app page subnavigation
+
+.app-page-nav{
+  transition: background-color 0.3s ease-in-out;
+  background-color: rgba(255,255,255,0);
+  
+  .navbar-brand {
+    opacity: 0;
+    color: #5a992c;
+  }  
+}
+
+.navbar-is-scrolling .app-page-nav{
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,1);
+  z-index: 99999;
+
+  .navbar-brand {
+    opacity: 1;
+  }  
+}
+
+.app-page-nav{
+  .navbar-item{
+    color: #fff;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+    height: 10px;
+    margin: 0 16px;
+    padding: 16px 0;
+    border-bottom: 3px solid transparent;
+    &:hover{
+      background: none;
+      border-bottom-color: rgba(0,0,0,0.1);
+      color: #fff;
+    }
+  }
+  .navbar-item--current{
+    border-bottom-color: #fff; 
+    &:hover{
+      border-bottom-color: #fff; 
+    }
+  }  
+  .button{
+    background: rgba(255,255,255,1);
+    @include app-color($services-color);
+    padding: 18px 16px;
+    border: 0;
+    &:hover{
+      background: rgba(255,255,255,0.8);
+      @include app-color($services-color);
+    }
+  }
+}
+
+.navbar-is-scrolling .app-page-nav{
+  .navbar-item{
+    color: #333;
+    &:hover{
+      border-bottom-color: rgba(0,0,0,0.1);
+      color: #fff;
+    }
+  }
+  .navbar-item--current{
+    border-bottom-color: #fff; 
+    &:hover{
+      border-bottom-color: #fff; 
+    }
+  }  
+  .button{
+    @include linear-gradient(-45deg, #64952F, #6BB13D);
+    color: #fff;
+    padding: 18px 16px;
+    border: 0;
+    &:hover{
+      background: rgba(255,255,255,0.8);
+      color: #fff;
+    }
+  }
+}

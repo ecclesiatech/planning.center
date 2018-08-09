@@ -13,15 +13,15 @@ import "../styles/global/_all.scss";
 class Template extends React.Component {
   state = {
     isTop: true,
-    stuff: "foo",
   };
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 300;
+      const isTop = window.scrollY <= 780;
+
       if (isTop !== this.state.isTop) {
         this.setState({ isTop })
-      }
+      }  
     });
   }  
 
@@ -31,10 +31,7 @@ class Template extends React.Component {
     let header
 
     return <div className="">
-  
-        <div inverse="true" toggleable="true" style={{ top: 0 }} className={this.state.isTop ? "navbar-is-top" : "navbar-is-scrolling"}>
-          <NavBar />
-        </div>
+        <NavBar />
         {header}
         {typeof children === "function" ? children(this.state) : children}
         <Footer />

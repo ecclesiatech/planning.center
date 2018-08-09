@@ -4,33 +4,27 @@ import styles from "../../styles/app-subnavbar.module.scss"
 import Icon from "../icon";
 
 const AppSubNavBar = () => {
-  return <nav className={[styles.navbar, "is-spaced level"].join(" ")} aria-label="page navigation">
-    <div className="container d-f@palm">
+  return <nav className={[styles.navbar, "is-spaced level app-page-nav"].join(" ")} aria-label="page navigation">
+    <div className="container level d-f@palm">
         <div className="navbar-brand">
-          <Icon symbol="apps#services-badge" style={{ height: "37px", width: "156px", marginBottom: "30px" }} />
+        <Icon symbol="apps#services-badge" style={{ height: "37px", width: "156px"}} />
         </div>
 
         <div className="navbar-menu">
           <div className={[styles.navbarTextOptions, "navbar-start navbar-menu-container"].join(" ")}>
-            <div className="navbar-item">
-              <Link className="navbar-item" to="/">
-                Products
-              </Link>
-            </div>
-            {/*END PRODUCT DROPDOWN*/}
-            <Link className="navbar-item" to="/about">
-              Learn
+            <Link className="navbar-item navbar-item--current" to="/">
+              Features
             </Link>
-            <Link className="navbar-item" to="/blog">
+            <Link className="navbar-item" to="/">
               Pricing
             </Link>
-            <Link className="navbar-item" to="/blog">
-              About
-            </Link>
+            <Link className="navbar-item" to="/">
+              Support
+            </Link>            
           </div>
           <div className="navbar-end">
-            <Link className="button is-text navbar-item" to="/login">
-              Log in
+            <Link className="button navbar-item" to="/signup">
+              Sign up
             </Link>
           </div>
         </div>

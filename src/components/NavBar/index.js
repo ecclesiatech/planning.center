@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import {PCLogoColor} from "../../components/icons/planning-center-icons";
+import {PCLogoColor, PCLogoMono} from "../../components/icons/planning-center-icons";
 import styles from "../../styles/navbar.module.scss"
 import Icon from "../icon";
 
@@ -9,7 +9,8 @@ const NavBar = () => {
     <div className="container d-f@palm">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <PCLogoColor />
+            <PCLogoColor className="pc-logo-color" />
+            <PCLogoMono className="pc-logo-mono" />
           </Link>
           <button className="button navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true" />
