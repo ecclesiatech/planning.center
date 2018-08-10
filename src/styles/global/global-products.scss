@@ -22,10 +22,6 @@
       padding-right: 24px;      
     }
 
-    .is-white{
-      color: #5a9424;
-    }
-
     .is-black{
       background: rgba(0,0,0,0.15);
       margin-left: 12px;
@@ -47,7 +43,26 @@
   padding-bottom: 84px; //Add padding to offset navbar being removed from the flow
 }
 
-.services .hero{
-  @include linear-gradient(-45deg, #64952F, #6BB13D);
-}
+//Themeing
+//=================================================================
+//=================================================================
+//Hero Gradients
+.check-ins .hero{@include gradient--chi;}
+.giving .hero{@include gradient--giv;}
+.groups .hero{@include gradient--gro;}
+.music-stand .hero{@include gradient--mus;}
+.people .hero{@include gradient--peo;}
+.registrations .hero{@include gradient--reg;}
+.resources .hero{@include gradient--res;}
+.services .hero{@include gradient--ser;}
+
+//Hero Button Colors
+.check-ins .hero .hero-buttons .is-white{color: $check-ins-color}
+.giving .hero .hero-buttons .is-white{color: $giving-color}
+.groups .hero .hero-buttons .is-white{color: $groups-color}
+.music-stand .hero .hero-buttons .is-white{color: $music-stand-color}
+.people .hero .hero-buttons .is-white{color: $people-color}
+.registrations .hero .hero-buttons .is-white{color: $registrations-color}
+.resources .hero .hero-buttons .is-white{color: $resources-color}
+.services .hero .hero-buttons .is-white{color: $services-color}
 

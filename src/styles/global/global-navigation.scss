@@ -1,0 +1,310 @@
+//TOPBAR
+.navbar-brand{
+  min-height: 1em;
+}
+
+.topbar {
+  transition: background-color 0.3s ease-in-out;
+  background-color: rgba(251, 251, 251, 0);
+  .pc-logo-color{
+    width: 196px;
+    height: 28px;
+  }
+  .pc-logo-mono{
+    // hide the mono logo
+    display: none;
+    fill: #fff;
+    width: 163px;
+    height: 24px;    
+  }
+}
+
+.navbar-is-scrolling {
+  nav.topbar {
+    position: sticky;
+    background-color: rgba(251,251,251,1);
+  }
+}
+
+//The navbar state on product pages 
+.app-page .topbar{
+  .pc-logo-color{
+    // hide the color logo
+    display: none;
+  }
+  .pc-logo-mono{
+    // show the mono logo
+    display: block;
+  }  
+}
+
+//The navbar state on product pages BEFORE scrolling
+.app-page.navbar-is-top .topbar{
+  @media screen and (min-width: 768px) {
+    .navbar-start > a,
+    .has-dropdown > a,
+    .navbar-end > a {
+      color: #fff;
+      border-radius: 3px;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+//The navbar state on product pages AFTER scrolling
+.app-page.navbar-is-scrolling .topbar {
+  .navbar-menu-container > a,
+  .has-dropdown > a,
+  .navbar-end > a{
+    font-size: 14px;
+    color: rgba(105, 106, 130, 0.9)
+  }
+  background: #fbfbfb;
+  top: 0;
+  height: 55px;
+  min-height: 20px;
+
+  .pc-logo-mono{
+    fill: rgba(106, 113, 131, 0.7);
+    width: 117px;
+    height: 18px;
+  }
+}
+
+//app page subnavigation
+
+.app-page-nav{
+  transition: background-color 0.3s ease-in-out;
+  background-color: rgba(255,255,255,0);
+  
+  .navbar-brand {
+    opacity: 0;
+  }  
+}
+
+.navbar-is-scrolling .app-page-nav{
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,1);
+  z-index: 99999;
+
+  .navbar-brand {
+    opacity: 1;
+  }  
+}
+
+.app-page-nav{
+  .navbar-item{
+    color: #fff;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+    height: 10px;
+    margin: 0 16px;
+    padding: 16px 0;
+    border-bottom: 3px solid transparent;
+    &:hover{
+      background: none;
+      border-bottom-color: rgba(0,0,0,0.1);
+      color: #fff;
+    }
+  }
+  .navbar-item--current{
+    border-bottom-color: #fff; 
+    &:hover{
+      border-bottom-color: #fff; 
+    }
+  }  
+  .button{
+    background: rgba(255,255,255,1);
+    padding: 18px 16px;
+    border: 0;
+    &:hover{
+      background: rgba(255,255,255,0.8);
+    }
+  }
+}
+
+.navbar-is-scrolling .app-page-nav{
+  .navbar-item{
+    color: rgba(51, 51, 51, 0.7);
+    &:hover{
+      color: rgba(51, 51, 51, 1);
+      border-bottom-color: rgba(0,0,0,0.1);
+    }
+  }
+  .navbar-item--current{
+    color: rgba(51, 51, 51, 1);
+  }  
+  .button{
+    color: #fff;
+    padding: 18px 16px 19px;
+    border: 0;
+    &:hover{
+      background: rgba(255,255,255,0.8);
+      color: #fff;
+    }
+  }
+}
+
+
+//Themeing
+//=================================================================
+//=================================================================
+.check-ins{
+  .app-page-nav .navbar-brand{ color: $check-ins-color;}
+
+  .app-page-nav .button{
+    color: $check-ins-color;
+    &:hover{
+      color: $check-ins-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $check-ins-color;
+      &:hover{border-bottom-color: $check-ins-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+
+.giving{
+  .app-page-nav .navbar-brand{ color: $giving-color;}
+
+  .app-page-nav .button{
+    color: $giving-color;
+    &:hover{
+      color: $giving-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $giving-color;
+      &:hover{border-bottom-color: $giving-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+
+.groups{
+  .app-page-nav .navbar-brand{ color: $groups-color;}
+
+  .app-page-nav .button{
+    color: $groups-color;
+    &:hover{
+      color: $groups-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $groups-color;
+      &:hover{border-bottom-color: $groups-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+
+.music-stand{
+  .app-page-nav .navbar-brand{ color: $music-stand-color;}
+
+  .app-page-nav .button{
+    color: $music-stand-color;
+    &:hover{
+      color: $music-stand-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $music-stand-color;
+      &:hover{border-bottom-color: $music-stand-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+
+.people{
+  .app-page-nav .navbar-brand{ color: $people-color;}
+
+  .app-page-nav .button{
+    color: $people-color;
+    &:hover{
+      color: $people-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $people-color;
+      &:hover{border-bottom-color: $people-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+
+.registrations{
+  .app-page-nav .navbar-brand{ color: $registrations-color;}
+
+  .app-page-nav .button{
+    color: $registrations-color;
+    &:hover{
+      color: $registrations-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $registrations-color;
+      &:hover{border-bottom-color: $registrations-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+
+.resources{
+  .app-page-nav .navbar-brand{ color: $resources-color;}
+
+  .app-page-nav .button{
+    color: $resources-color;
+    &:hover{
+      color: $resources-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $resources-color;
+      &:hover{border-bottom-color: $resources-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+
+.services{
+  .app-page-nav .navbar-brand{ color: $services-color;}
+
+  .app-page-nav .button{
+    color: $services-color;
+    &:hover{
+      color: $services-color;
+    }
+  }
+
+  .navbar-is-scrolling .app-page-nav{
+    .navbar-item--current{
+      border-bottom-color: $services-color;
+      &:hover{border-bottom-color: $services-color;}
+    }  
+    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+  }
+}
+// $church-center-color: #129dbb;
