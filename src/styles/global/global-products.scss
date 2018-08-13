@@ -43,6 +43,30 @@
   padding-bottom: 84px; //Add padding to offset navbar being removed from the flow
 }
 
+.section--content-wrap{
+  padding: 112px 20px;
+}
+
+.section-header{
+  text-align: center;
+}
+
+.section-header__lead{
+  text-transform: uppercase;
+  color: hsla(221, 40%, 58%, 0.4);
+  font-weight: 700;
+  letter-spacing: 0.1em;  
+}
+
+.section-header__main{
+
+}
+
+.section-header__sub{
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
 //Themeing
 //=================================================================
 //=================================================================
@@ -66,3 +90,6 @@
 .resources .hero .hero-buttons .is-white{color: $resources-color}
 .services .hero .hero-buttons .is-white{color: $services-color}
 
+//Section background colors
+.section--extra-light-color{background: $extra-light-blue;}
+.section--light-color{background: $light-blue;}

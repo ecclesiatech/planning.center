@@ -48,10 +48,20 @@ class ServicesIndex extends React.Component {
               </div>
               <AppSubNavBar />
             </section>
+            
+            <section className="section--extra-light-color section--content-wrap">
+              <div className="container">
+                <header className="section-header">
+                  <h3 className="section-header__lead"> Scheduling</h3>
+                  <h1 className="section-header__main"> Coordinate with volunteers</h1>
+                  <h2 className="section-header__sub"> Schedule people for every ministry position in the church</h2>
+                
+                </header>
+              </div>
+            </section>
 
-            <main className="container" style={{ height: "150vh", paddingTop: "150px" }}>
-              <section>
-                <h1> Planning Center Services </h1>
+            <section className="section--light-color section--content-wrap">
+              <div className="container">
                 <p>Just setting up and showing off icons...</p>
                 <div style={{ fontSize: "4rem" }}>
                   <Icon symbol="planning-center#planning-center-mark" />
@@ -64,8 +74,9 @@ class ServicesIndex extends React.Component {
                   <Icon symbol="apps#people-app" />
                   <Icon symbol="apps#services-app" />
                 </div>
-              </section>
-            </main>
+              </div>
+            </section>  
+
           </React.Fragment>}
       </Layout>;
   }
