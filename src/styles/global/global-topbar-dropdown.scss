@@ -10,6 +10,11 @@
   position: absolute;
   top: 100%;
   z-index: 999991;
+  @media screen and (min-width: 1088px){
+    .navbar-item {
+      padding-bottom: 0.6rem;
+    }
+  }
 }
 
 .topbar .navbar-dropdown{
@@ -50,6 +55,24 @@
   [title~="music-stand-app"] {
     color: $music-stand-color;
   }
+}
+
+//Add-on styling
+.navbar-dropdown .navbar-item.add-on{
+  @media screen and (min-width: 1088px){  
+    position: relative;
+    padding-left: 72px;
+    padding-top: 0.6rem;
+    .media-left{
+      margin-right: 8px;
+    }
+    [title~="icon"]{
+      font-size: 1.7rem;
+    }
+    .app-name{
+      font-size: 1.2rem;
+    }
+  }  
 }
 
 //Themeing
