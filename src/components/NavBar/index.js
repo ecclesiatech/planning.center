@@ -22,7 +22,7 @@ const NavBar = () => {
         <div className="navbar-menu">
           <div className={[styles.navbarTextOptions, "navbar-start navbar-menu-container"].join(" ")}>
             <div className="navbar-item has-dropdown is-hoverable">
-              <Link className="navbar-item" to="/">
+              <Link to="" className="navbar-item">
                 Products
               </Link>
               <div className="navbar-dropdown">
@@ -126,7 +126,7 @@ const NavBar = () => {
             <Link className="navbar-item" to="/blog">
               Pricing
             </Link>
-            <Link className="navbar-item" to="/blog">
+            <Link className="navbar-item" to="/about">
               About
             </Link>
           </div>

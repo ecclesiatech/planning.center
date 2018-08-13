@@ -1,0 +1,63 @@
+//Override Bulma defaults
+.navbar-dropdown{
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 0; //1px solid hsla(222, 8%, 90%, 1)
+  box-shadow: 0 7px 21px hsla(0, 0%, 4%, 0.1), 0 1px 2px hsla(0, 0%, 4%, 0.1);
+  font-size: 0.875rem;
+  left: 0;
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 999991;
+}
+
+.topbar .navbar-dropdown{
+  .app-name{
+    font-size: 1.3rem;
+    font-weight: 900;
+    opacity: 0.9;
+  }
+  .app-tagline{
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+  [title~="icon"] {
+    font-size: 2.6rem;
+    position: relative;
+  }
+  [title~="check-ins-app"] {
+    color: $check-ins-color;
+  }
+  [title~="giving-app"] {
+    color: $giving-color;
+  }  
+  [title~="groups-app"] {
+    color: $groups-color;
+  }
+  [title~="people-app"] {
+    color: $people-color;
+  }  
+  [title~="registrations-app"] {
+    color: $registrations-color;
+  }
+  [title~="resources-app"] {
+    color: $resources-color;
+  }  
+  [title~="services-app"] {
+    color: $services-color;
+  }  
+  [title~="music-stand-app"] {
+    color: $music-stand-color;
+  }
+}
+
+//Themeing
+.check-ins .hero{@include gradient--chi;}
+.giving .hero{@include gradient--giv;}
+.groups .hero{@include gradient--gro;}
+.music-stand .hero{@include gradient--mus;}
+.people .hero{@include gradient--peo;}
+.registrations .hero{@include gradient--reg;}
+.resources .hero{@include gradient--res;}
+.services .hero{@include gradient--ser;}

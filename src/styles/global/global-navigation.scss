@@ -1,3 +1,5 @@
+@import "global-topbar-dropdown";
+
 //TOPBAR
 .navbar-brand{
   min-height: 1em;
@@ -91,7 +93,7 @@
   left: 0;
   right: 0;
   background-color: rgba(255,255,255,1);
-  z-index: 99999;
+  z-index: 99991;//1 less than .topbar
 
   .navbar-brand {
     opacity: 1;
@@ -122,8 +124,9 @@
   }  
   .button{
     background: rgba(255,255,255,1);
-    padding: 18px 16px;
+    padding: 18px 16px 19px;
     border: 0;
+    line-height: 0;
     &:hover{
       background: rgba(255,255,255,0.8);
     }
@@ -143,8 +146,6 @@
   }  
   .button{
     color: #fff;
-    padding: 18px 16px 19px;
-    border: 0;
     &:hover{
       background: rgba(255,255,255,0.8);
       color: #fff;
@@ -167,11 +168,14 @@
   }
 
   .navbar-is-scrolling .app-page-nav{
-    .navbar-item--current{
+    &.navbar-item--current{
       border-bottom-color: $check-ins-color;
       &:hover{border-bottom-color: $check-ins-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 
@@ -186,11 +190,14 @@
   }
 
   .navbar-is-scrolling .app-page-nav{
-    .navbar-item--current{
+    &.navbar-item--current{
       border-bottom-color: $giving-color;
       &:hover{border-bottom-color: $giving-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 
@@ -205,11 +212,14 @@
   }
 
   .navbar-is-scrolling .app-page-nav{
-    .navbar-item--current{
+    &.navbar-item--current{
       border-bottom-color: $groups-color;
       &:hover{border-bottom-color: $groups-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 
@@ -224,11 +234,14 @@
   }
 
   .navbar-is-scrolling .app-page-nav{
-    .navbar-item--current{
+    &.navbar-item--current{
       border-bottom-color: $music-stand-color;
       &:hover{border-bottom-color: $music-stand-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 
@@ -243,11 +256,14 @@
   }
 
   .navbar-is-scrolling .app-page-nav{
-    .navbar-item--current{
+    &.navbar-item--current{
       border-bottom-color: $people-color;
       &:hover{border-bottom-color: $people-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 
@@ -262,11 +278,14 @@
   }
 
   .navbar-is-scrolling .app-page-nav{
-    .navbar-item--current{
+    &.navbar-item--current{
       border-bottom-color: $registrations-color;
       &:hover{border-bottom-color: $registrations-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 
@@ -281,11 +300,14 @@
   }
 
   .navbar-is-scrolling .app-page-nav{
-    .navbar-item--current{
+    &.navbar-item--current{
       border-bottom-color: $resources-color;
       &:hover{border-bottom-color: $resources-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 
@@ -299,12 +321,15 @@
     }
   }
 
-  .navbar-is-scrolling .app-page-nav{
+  &.navbar-is-scrolling .app-page-nav{
     .navbar-item--current{
       border-bottom-color: $services-color;
       &:hover{border-bottom-color: $services-color;}
     }  
-    .button{@include linear-gradient(-45deg, #64952F, #6BB13D);}
+    .button{
+      color: #fff;
+      @include linear-gradient(-45deg, #64952F, #6BB13D);
+    }
   }
 }
 // $church-center-color: #129dbb;

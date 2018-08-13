@@ -1,16 +1,16 @@
 import React from "react";
 import get from "lodash/get";
 import Helmet from "react-helmet";
-import heroImage from "./services.svg";
+import heroImage from "./check-ins.svg";
 
 import Layout from "../../components/layout";
 import AppSubNavBar from "../../components/AppSubNavBar";
 import Icon from "../../components/icon";
 
-class ServicesIndex extends React.Component {
+class CheckInsIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const appName = "services";
+    const appName = "check-ins";
     
     return <Layout location={this.props.location}>
         {layoutState => <React.Fragment>
@@ -24,7 +24,7 @@ class ServicesIndex extends React.Component {
                   <div className="column">
                     <header style={{ marginBottom: "48px" }}>
                       <Icon symbol="apps#services-badge" style={{ height: "64px", width: "247px", marginBottom: "30px" }} />
-                      <h1>Lead a quality service with a unified team.</h1>
+                      <h1>!!Need actual text in here</h1>
                     </header>
 
                     <ul className="inline-links hero-buttons" style={{ display: "block" }}>
@@ -71,4 +71,4 @@ class ServicesIndex extends React.Component {
   }
 }
 
-export default ServicesIndex;
+export default CheckInsIndex;

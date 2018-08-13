@@ -65,6 +65,9 @@ class ServicesIndex extends React.Component {
                   <Icon symbol="apps#services-app" />
                 </div>
               </section>
+              <section style={{ height: "400px", background: "rebeccaPurple" }} id="features" name="features" />
+              <section style={{ height: "400px", background: "yellow" }} id="pricing" name="pricing" />
+              <section style={{ height: '400px', background: 'tomato' }} id="support" name="support" />
             </main>
           </React.Fragment>}
       </Layout>;
