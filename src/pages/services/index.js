@@ -65,7 +65,7 @@ class ServicesIndex extends React.Component {
                     <Tab><strong>Team Communication:</strong> Send scheduling requests to people via text, email, or push notifications on the mobile app. </Tab>
                     <Tab><strong>The Matrix:</strong> Schedule for multiple services at once and combine multiple schedule requests into one notification per person. </Tab>
                   </TabList>
-                  <div className="product-tabs__panel column">
+                  <div className="product-tabs__panel-wrap column">
                     <TabPanel>
                       <h2>TAB PANEL 1</h2>
                     </TabPanel>

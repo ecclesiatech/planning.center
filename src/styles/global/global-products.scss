@@ -104,10 +104,15 @@
   top: calc(18px + 0.55em);
 }
 
-.product-tabs__panel{
-
+.product-tabs__panel-wrap{
+  .react-tabs__tab-panel{
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+  .react-tabs__tab-panel--selected{
+    opacity: 1;
+  }
 }
-
 .product-tabs .react-tabs__tab--selected{
   background: hsla(221, 100%, 62%, 0.08);
 }
