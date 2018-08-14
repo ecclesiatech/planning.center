@@ -58,13 +58,58 @@
   letter-spacing: 0.1em;  
 }
 
-.section-header__main{
-
-}
-
 .section-header__sub{
   font-size: 1.4rem;
   font-weight: 400;
+
+  @include bp(from-mobile) {
+    margin-bottom: 88px;
+  }
+}
+
+//Product page tabs
+//=================================================================
+.product-tabs{
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.product-tabs__tabs{
+    max-width: 392px;
+
+  > *{
+    border-radius: 7px;
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    cursor: default;
+    margin-bottom: 0.5em;
+  }
+
+  > *:hover{
+    background: hsla(221, 100%, 62%, 0.03);
+  }
+
+  &.branded-ul li{
+    padding-left: 36px;
+  }
+
+  &.branded-ul li:before{
+    left: 18px;
+  }
+}
+
+.product-tabs__tabs li:before{
+  top: calc(18px + 0.55em);
+}
+
+.product-tabs__panel{
+
+}
+
+.product-tabs .react-tabs__tab--selected{
+  background: hsla(221, 100%, 62%, 0.08);
 }
 
 //Themeing

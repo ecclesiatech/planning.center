@@ -115,3 +115,60 @@
   @include linear-gradient(-45deg, #64952F, #6BB13D);
 }
 
+
+//Media queries
+// USE IT LIKE
+  // @include bp(mobile) {
+  //   width: 100%;
+  // }
+
+@mixin bp($point) {
+  @if $point == to-mobile {
+    //until 768px
+    @media (max-width: 768px) { @content; }
+  }
+  @if $point == from-mobile {
+    //until 768px
+    @media (min-width: 768px) { @content; }
+  }  
+  @else if $point == to-tablet {
+    //until 769px    
+    @media (max-width: 769px) { @content; }
+  }
+  @else if $point == from-tablet {
+    //from 769px    
+    @media (min-width: 769px) { @content; }
+  }
+  @else if $point == tablet-only {
+    //from 769px and until 1023px    
+    @media (min-width: 769px) and (max-width: 1023px)  { @content; }
+  }
+  @else if $point == touch {
+    //until 1023px
+    @media (max-width: 1023px) { @content; }
+  }
+  @else if $point == to-desktop {
+    //until 1024px
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == from-desktop {
+    //from 1024px
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $point == desktop-only {
+    //from 1024px and until 1215px
+    @media (min-width: 1024px) and (max-width: 1215px) { @content; }
+  }
+  @else if $point == from-widescreen {
+    //from 1216px
+    @media (min-width: 1216px) { @content; }
+  }
+  @else if $point == widescreen-only {
+    //from 1216px and until 1407px
+    @media (min-width: 1216px) and (max-width: 1407px) { @content; }
+  }
+  @else if $point == from-fullhd {
+    //from 1408px
+    @media (min-width: 1408px) { @content; }
+  }
+}
