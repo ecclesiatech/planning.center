@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import heroImage from "./services.svg";
-// import tabBgImage1 from "../../images/tab-panel-bg-1.svg";
+import s1Image1 from "../../images/bgs/services/section-1/image-1.png";
 
 import Layout from "../../components/layout";
 import AppSubNavBar from "../../components/AppSubNavBar";
@@ -68,16 +68,16 @@ class ServicesIndex extends React.Component {
                   </TabList>
                   <div className="product-tabs__panel-wrap tab-panel-1 column">
                     <TabPanel>
-                      <img src={heroImage} alt="" />
+                      <img src={s1Image1} alt="" />
                     </TabPanel>
                     <TabPanel>
-                      <h2>Any content 2</h2>
+                      <img src={s1Image1} alt="" />
                     </TabPanel>
                     <TabPanel>
-                      <h2>Any content 3</h2>
+                      <img src={s1Image1} alt="" />
                     </TabPanel>
                     <TabPanel>
-                      <h2>Any content 4</h2>
+                      <img src={s1Image1} alt="" />
                     </TabPanel>
                   </div>
                 </Tabs>
