@@ -16,3 +16,7 @@
 .inline-links li{
   display: inline-block;
 }
+
+.columns--flip-sides{
+  flex-direction: row-reverse;
+}

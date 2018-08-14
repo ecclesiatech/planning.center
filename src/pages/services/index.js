@@ -58,19 +58,28 @@ class ServicesIndex extends React.Component {
                   <h1 className="section-header__main"> Coordinate with volunteers</h1>
                   <h2 className="section-header__sub"> Schedule people for every ministry position in the church</h2>
                 </header>
-                <Tabs>
-                  <TabList>
-                    <Tab>Title 1</Tab>
-                    <Tab>Title 2</Tab>
+                <Tabs className="columns columns--flip-sides">
+                  <TabList className="product-tabs column">
+                    <Tab><strong>Teams:</strong> Your church has unique goals and priorities, so create custom fields to store information relevant to your ministry. </Tab>
+                    <Tab><strong>Calendar Preferences:</strong> Schedule people according to preferences, blockout dates, conflicts, and already declined requests. </Tab>
+                    <Tab><strong>Team Communication:</strong> Send scheduling requests to people via text, email, or push notifications on the mobile app. </Tab>
+                    <Tab><strong>The Matrix:</strong> Schedule for multiple services at once and combine multiple schedule requests into one notification per person. </Tab>
                   </TabList>
-
-                  <TabPanel>
-                    <h2>Any content 1</h2>
-                  </TabPanel>
-                  <TabPanel>
-                    <h2>Any content 2</h2>
-                  </TabPanel>
-                </Tabs>                
+                  <div className="product-tabs column">
+                    <TabPanel>
+                      <h2>TAB PANEL 1</h2>
+                    </TabPanel>
+                    <TabPanel>
+                      <h2>Any content 2</h2>
+                    </TabPanel>
+                    <TabPanel>
+                      <h2>Any content 3</h2>
+                    </TabPanel>
+                    <TabPanel>
+                      <h2>Any content 4</h2>
+                    </TabPanel>
+                  </div>
+                </Tabs>
               </div>
             </section>
 

@@ -28,6 +28,7 @@ $input-shadow: none;
 @import "../../node_modules/bulma/sass/elements/_all.sass";
 @import "../../node_modules/bulma/sass/grid/_all.sass";
 @import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "minireset-modified.scss";//This reset is modified from the Bulma OG. Load here for proper inheritence 
 // @end "~bulma"
 
 // Bulma overrides
@@ -41,4 +42,5 @@ button.is-medium,
 button.is-large{
   border-radius: 6px;
 }
+
 // @end Bulma overrides    
