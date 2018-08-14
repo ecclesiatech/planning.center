@@ -105,10 +105,24 @@
 }
 
 .product-tabs__panel-wrap{
+  background-position: 50% 50%;
+  background-size: contain;
+
+  &.tab-panel-1{
+    background-image: url(../../images/bgs/tab-panel-bg-1.svg);
+  }
+
   .react-tabs__tab-panel{
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
+
+    img{
+      display: block;
+      margin: 0 auto;
+      max-width: 624px;
+    }
   }
+
   .react-tabs__tab-panel--selected{
     opacity: 1;
   }

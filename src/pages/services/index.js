@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import heroImage from "./services.svg";
+// import tabBgImage1 from "../../images/tab-panel-bg-1.svg";
 
 import Layout from "../../components/layout";
 import AppSubNavBar from "../../components/AppSubNavBar";
@@ -65,9 +66,9 @@ class ServicesIndex extends React.Component {
                     <Tab><strong>Team Communication:</strong> Send scheduling requests to people via text, email, or push notifications on the mobile app. </Tab>
                     <Tab><strong>The Matrix:</strong> Schedule for multiple services at once and combine multiple schedule requests into one notification per person. </Tab>
                   </TabList>
-                  <div className="product-tabs__panel-wrap column">
+                  <div className="product-tabs__panel-wrap tab-panel-1 column">
                     <TabPanel>
-                      <h2>TAB PANEL 1</h2>
+                      <img src={heroImage} alt="" />
                     </TabPanel>
                     <TabPanel>
                       <h2>Any content 2</h2>
