@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 
 import "@planningcenter/icons/css/symbol.css";
 
-import "../styles/minireset-modified.scss";
 import "../styles/bulma-import.scss";
+import "../styles/minireset-modified.scss";
 import "../styles/global/_all.scss";
 class Template extends React.Component {
   state = {

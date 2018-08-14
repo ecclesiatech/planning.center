@@ -1,6 +1,8 @@
 import React from "react";
 import get from "lodash/get";
 import Helmet from "react-helmet";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+
 import heroImage from "./services.svg";
 
 import Layout from "../../components/layout";
@@ -55,8 +57,20 @@ class ServicesIndex extends React.Component {
                   <h3 className="section-header__lead"> Scheduling</h3>
                   <h1 className="section-header__main"> Coordinate with volunteers</h1>
                   <h2 className="section-header__sub"> Schedule people for every ministry position in the church</h2>
-                
                 </header>
+                <Tabs>
+                  <TabList>
+                    <Tab>Title 1</Tab>
+                    <Tab>Title 2</Tab>
+                  </TabList>
+
+                  <TabPanel>
+                    <h2>Any content 1</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>Any content 2</h2>
+                  </TabPanel>
+                </Tabs>                
               </div>
             </section>
 
