@@ -1,5 +1,29 @@
 @import "global-topbar-dropdown";
 
+.navbar.topbar{
+  position: relative;
+  z-index: 99992;
+  font-weight: 700;
+  width: 100%;
+  top: 0;
+  min-height: 68px;
+  margin-bottom: 0 !important;
+
+  a{text-decoration: none !important;}
+}
+
+.navbarTextOptions{
+  @media screen and (min-width: 768px){
+      flex: 1;
+      justify-content: center !important;
+  }  
+}
+
+.navbar.topbar,
+.navbar.app-page-nav{
+  > .container{align-items: center;}
+}
+
 //TOPBAR
 .navbar-brand{
   min-height: 1em;
@@ -37,8 +61,14 @@
   .pc-logo-mono{
     // show the mono logo
     display: block;
-  }  
+  }
 }
+
+.app-page-nav .navbarTextOptions a{
+  a{border-radius: 0;}
+}
+
+.app-page-nav.navbar{min-height: 68px;}
 
 //The navbar state on product pages BEFORE scrolling
 .app-page.navbar-is-top .topbar{

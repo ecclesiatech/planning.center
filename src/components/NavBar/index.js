@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import {PCLogoColor, PCLogoMono} from "../../components/icons/planning-center-icons";
-import styles from "../../styles/navbar.module.scss"
+// import styles from "../../styles/navbar.module.scss"
 import Icon from "../icon";
 
 const NavBar = () => {
-  return <nav className={[styles.navbar, "topbar is-fixed-top has-shadow is-spaced level"].join(" ")} aria-label="main navigation">
+  return <nav className="navbar topbar is-fixed-top level" aria-label="main navigation">
     <div className="container d-f@palm">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
@@ -20,7 +20,7 @@ const NavBar = () => {
         </div>
 
         <div className="navbar-menu">
-          <div className={[styles.navbarTextOptions, "navbar-start navbar-menu-container"].join(" ")}>
+          <div className="navbarTextOptions navbar-start navbar-menu-container">
             <div className="navbar-item has-dropdown is-hoverable">
               <Link to="" className="navbar-item">
                 Products

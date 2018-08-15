@@ -49,15 +49,15 @@ class ServicesIndex extends React.Component {
                   </div>
                 </div>
               </div>
-              <AppSubNavBar />
+              <AppSubNavBar  />
             </section>
             
-            <section className="section--extra-light-color section--content-wrap">
+            <section id="features" name="#features" className="section--extra-light-color section--content-wrap">
               <div className="container">
                 <header className="section-header">
                   <h3 className="section-header__lead"> Scheduling</h3>
                   <h1 className="section-header__main"> Coordinate with volunteers</h1>
-                  <h2 className="section-header__sub"> Schedule people for every ministry position in the church</h2>
+                  <h2 className="section-header__sub"> Schedule people for every ministry position in the church.</h2>
                 </header>
                 <Tabs className="product-tabs columns columns--flip-sides">
                   <TabList className="product-tabs__tabs column branded-ul">
@@ -84,22 +84,37 @@ class ServicesIndex extends React.Component {
               </div>
             </section>
 
-            <section className="section--light-color section--content-wrap">
+            <section id="features" name="#features" className="section--light-color section--content-wrap">
               <div className="container">
-                <p>Just setting up and showing off icons...</p>
-                <div style={{ fontSize: "4rem" }}>
-                  <Icon symbol="planning-center#planning-center-mark" />
-                  <Icon symbol="apps#accounts-app" />
-                  <Icon symbol="apps#check-ins-app" />
-                  <Icon symbol="apps#giving-app" />
-                  <Icon symbol="apps#groups-app" />
-                  <Icon symbol="apps#registrations-app" />
-                  <Icon symbol="apps#resources-app" />
-                  <Icon symbol="apps#people-app" />
-                  <Icon symbol="apps#services-app" />
-                </div>
+                <header className="section-header">
+                  <h3 className="section-header__lead"> Planning</h3>
+                  <h1 className="section-header__main"> Service Road Map</h1>
+                  <h2 className="section-header__sub"> Prepare for services by creating detailed plans for people to follow.</h2>
+                </header>
+                <Tabs className="product-tabs columns columns--flip-sides">
+                  <TabList className="product-tabs__tabs column branded-ul">
+                    <Tab><strong>Service Plans</strong> Set up unique plans for each service including details on people, songs, notes, and other items. </Tab>
+                <Tab><strong>Service Types:</strong> Organize your service plans within specific categories, like Sunday Morning or Kids Midweek.</Tab>
+                    <Tab><strong>Team Communication:</strong> Send scheduling requests to people via text, email, or push notifications on the mobile app. </Tab>
+                <Tab><strong>Order of Service:</strong> Give people an agenda for the service by setting the order and length of each item on the schedule.</Tab>
+                  </TabList>
+                  <div className="product-tabs__panel-wrap tab-panel-1 column">
+                    <TabPanel>
+                      <img src={s1Image1} alt="" />
+                    </TabPanel>
+                    <TabPanel>
+                      <img src={s1Image1} alt="" />
+                    </TabPanel>
+                    <TabPanel>
+                      <img src={s1Image1} alt="" />
+                    </TabPanel>
+                    <TabPanel>
+                      <img src={s1Image1} alt="" />
+                    </TabPanel>
+                  </div>
+                </Tabs>
               </div>
-            </section>  
+            </section>
 
           </React.Fragment>}
       </Layout>;
