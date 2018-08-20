@@ -84,3 +84,42 @@
 .registrations .hero{@include gradient--reg;}
 .resources .hero{@include gradient--res;}
 .services .hero{@include gradient--ser;}
+
+//Mobile
+@media screen and (max-width: 1087px){
+
+.navbar-brand, .navbar-tabs{
+  position: relative;
+  z-index: 2;
+}
+
+.navbar.is-shown .navbar-menu{display: block;}
+
+.navbar.is-shown{
+  .navbar-menu{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    box-shadow: none;
+    color: #000;
+  }
+
+  .navbar-dropdown{
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .navbarTextOptions{
+
+  }
+
+  .navbar-start, .navbar-end{
+    display: block;
+  }
+
+}
+}

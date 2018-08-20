@@ -1,5 +1,6 @@
-.ta-r{
-  text-align: right;
+//Flex helpers
+.d-f{
+  display: flex;
 }
 
 .d-f\@palm{
@@ -16,14 +17,16 @@
   flex: 1;
 }
 
-.inline-links li{
-  display: inline-block;
-}
-
 .columns--flip-sides{
   flex-direction: row-reverse;
 }
 
+//Typography
+.ta-r{
+  text-align: right;
+}
+
+// Lists
 .branded-ul{
   li{
     position: relative;
@@ -40,3 +43,14 @@
     border: 2px solid $pc-blue;
   }
 }
+
+.inline-links li{
+  display: inline-block;
+}
+
+
+//Positioning
+.absolute{position: absolute;}
+.relative{position: relative;}
+.top-0{top: 0;}
+.bottom-0{bottom: 0;}

@@ -9,6 +9,7 @@ import s1Image1 from "../../images/bgs/services/section-1/image-1.png";
 import Layout from "../../components/layout";
 import AppSubNavBar from "../../components/AppSubNavBar";
 import Icon from "../../components/icon";
+import { BottomArc } from "../../components/design-elements/design-elements";
 
 class ServicesIndex extends React.Component {
   render() {
@@ -52,8 +53,8 @@ class ServicesIndex extends React.Component {
               <AppSubNavBar  />
             </section>
             
-            <section id="features" name="#features" className="section--extra-light-color section--content-wrap">
-              <div className="container">
+            <section id="features" name="#features" className="section--extra-light-color section--content-wrap relative">
+              <div className="container" style={{paddingBottom: '30px'}}>
                 <header className="section-header">
                   <h3 className="section-header__lead"> Scheduling</h3>
                   <h1 className="section-header__main"> Coordinate with volunteers</h1>
@@ -82,16 +83,18 @@ class ServicesIndex extends React.Component {
                   </div>
                 </Tabs>
               </div>
+              <BottomArc className="design-element absolute bottom-0" style={{ fill: 'F2FBFF'}} />
             </section>
 
-            <section id="features" name="#features" className="section--light-color section--content-wrap">
-              <div className="container">
+            <section id="features" name="#features" className="section--light-color section--content-wrap relative">
+              <BottomArc className="design-element absolute bottom-0" style={{ fill: 'F2FBFF' }} />            
+              <div className="container" style={{paddingBottom: '30px'}}>
                 <header className="section-header">
                   <h3 className="section-header__lead"> Planning</h3>
                   <h1 className="section-header__main"> Service Road Map</h1>
                   <h2 className="section-header__sub"> Prepare for services by creating detailed plans for people to follow.</h2>
                 </header>
-                <Tabs className="product-tabs columns columns--flip-sides">
+                <Tabs className="product-tabs columns">
                   <TabList className="product-tabs__tabs column branded-ul">
                     <Tab><strong>Service Plans</strong> Set up unique plans for each service including details on people, songs, notes, and other items. </Tab>
                 <Tab><strong>Service Types:</strong> Organize your service plans within specific categories, like Sunday Morning or Kids Midweek.</Tab>
@@ -114,6 +117,7 @@ class ServicesIndex extends React.Component {
                   </div>
                 </Tabs>
               </div>
+              <BottomArc className="design-element absolute bottom-0" style={{ fill: 'F2FBFF' }} />
             </section>
 
           </React.Fragment>}

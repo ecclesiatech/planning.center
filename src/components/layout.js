@@ -8,6 +8,7 @@ import "@planningcenter/icons/css/symbol.css";
 
 import "../styles/bulma-import.scss";
 import "../styles/global/_all.scss";
+
 class Template extends React.Component {
   state = {
     isTop: true,
@@ -21,7 +22,7 @@ class Template extends React.Component {
         this.setState({ isTop })
       }  
     });
-  }  
+  }
 
   render() {
     const { location, children } = this.props
@@ -29,7 +30,7 @@ class Template extends React.Component {
     let header
 
     return <div className="">
-        <NavBar />
+      <NavBar />
         {header}
         {typeof children === "function" ? children(this.state) : children}
         <Footer />

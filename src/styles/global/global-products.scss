@@ -44,7 +44,7 @@
 }
 
 .section--content-wrap{
-  padding: 112px 20px;
+  padding: 112px 0;
 }
 
 .section-header{
@@ -56,12 +56,20 @@
   color: hsla(221, 40%, 58%, 0.4);
   font-weight: 700;
   letter-spacing: 0.1em;  
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.section-header__main{
+  font-size: 2.4rem;
 }
 
 .section-header__sub{
   font-size: 1.4rem;
   font-weight: 400;
-
+  opacity: 0.9;
+  margin-bottom: 40px;
+  
   @include bp(from-mobile) {
     margin-bottom: 88px;
   }
@@ -77,6 +85,11 @@
 
 .product-tabs__tabs{
     max-width: 392px;
+
+    @include bp(to-mobile) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
   > *{
     border-radius: 7px;
@@ -119,7 +132,9 @@
     img{
       display: block;
       margin: 0 auto;
-      max-width: 624px;
+      @include bp(from-mobile) {
+        max-width: 624px;
+      }
     }
   }
 
