@@ -21,6 +21,12 @@
   flex-direction: row-reverse;
 }
 
+.show-only-on-touch{
+  @media screen and (min-width: 1088px) {
+    display: none;    
+  }
+}
+
 //Typography
 .ta-r{
   text-align: right;

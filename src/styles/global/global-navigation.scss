@@ -13,18 +13,7 @@
   }    
 
   a{
-    text-decoration: none !important;
-    @media screen and (max-width: 1087px){
-      font-size: 1.3rem;
-      font-weight: 800;
-      text-align: left;
-      padding-left: 32px;
-      padding-right: 32px;
-      &:hover{
-        background: transparent;
-        color: #333;
-      }
-    }    
+    text-decoration: none !important;  
   }
 }
 
@@ -94,7 +83,7 @@
 
 //The navbar (TOPBAR) state on product pages 
 .app-page .topbar,
-.app-page .topbar.navbar-is-shown{
+.app-page .topbar.js-navbar-is-shown{
   .pc-logo-color{
     // hide the color logo
     display: none;
@@ -129,8 +118,10 @@
   .navbar-menu-container > a,
   .has-dropdown > a,
   .navbar-end > a{
-    font-size: 14px;
-    color: rgba(105, 106, 130, 0.9)
+    @media screen and (min-width: 1088px){
+      font-size: 14px;
+      color: rgba(105, 106, 130, 0.9)
+    }
   }
   background: #fbfbfb;
   top: 0;
@@ -143,7 +134,9 @@
     height: 18px;
   }
   .navbar-mobile-trigger{
-    color: rgba(105, 106, 130, 0.9);
-    font-size: 14px;
+    @media screen and (min-width: 1088px){
+      color: rgba(105, 106, 130, 0.9);
+      font-size: 14px;
+    }
   }  
 }
