@@ -11,13 +11,13 @@ class NavBar extends React.Component {
       this.showToggleNav = this.showToggleNav.bind(this)
       this.state = {
         isActive: false,
-        showHideMobileNav: "hidden"
+        showHideMobileNav: "navbar-is-hidden"
       }
   };
 
   showToggleNav() {
     //Toggle the global nav on mobile
-    var navToggleClass = this.state.showHideMobileNav === "is-hidden" ? "is-shown" : "is-hidden";
+    var navToggleClass = this.state.showHideMobileNav === "navbar-is-hidden" ? "navbar-is-shown" : "navbar-is-hidden";
     this.setState({ "showHideMobileNav": navToggleClass });
   }
 
@@ -49,6 +49,12 @@ class NavBar extends React.Component {
 
           <div className="navbar-menu">
             <div className="navbarTextOptions navbar-start navbar-menu-container">
+              <div 
+                className="mobile-menu-close"
+                onClick={this.showToggleNav}
+              >
+                X
+              </div>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="" className="navbar-item">
                   Products

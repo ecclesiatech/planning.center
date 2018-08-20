@@ -1,9 +1,6 @@
 //Override Bulma defaults
 .navbar-dropdown{
-  background-color: #FFFFFF;
-  border-radius: 8px;
   border: 0; //1px solid hsla(222, 8%, 90%, 1)
-  box-shadow: 0 7px 21px hsla(0, 0%, 4%, 0.1), 0 1px 2px hsla(0, 0%, 4%, 0.1);
   font-size: 0.875rem;
   left: 0;
   min-width: 100%;
@@ -11,13 +8,21 @@
   top: 100%;
   z-index: 999991;
   @media screen and (min-width: 1088px){
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 7px 21px hsla(0, 0%, 4%, 0.1), 0 1px 2px hsla(0, 0%, 4%, 0.1);
     .navbar-item {
       padding-bottom: 0.6rem;
     }
   }
 }
 
-.topbar .navbar-dropdown{
+.topbar .navbar-dropdown{ 
+  .media-left{
+    @media screen and (max-width: 1087px){
+      margin-right: 8px;
+    }
+  }
   .app-name{
     font-size: 1.3rem;
     font-weight: 900;
@@ -26,10 +31,16 @@
   .app-tagline{
     font-size: 0.85rem;
     opacity: 0.7;
+    @media screen and (max-width: 1087px){
+      display: none;
+    }    
   }
   [title~="icon"] {
-    font-size: 2.6rem;
+    font-size: 1.9rem;
     position: relative;
+    @media screen and (min-width: 1088px){
+      font-size: 2.6rem;
+    }
   }
   [title~="check-ins-app"] {
     color: $check-ins-color;
@@ -85,41 +96,69 @@
 .resources .hero{@include gradient--res;}
 .services .hero{@include gradient--ser;}
 
+.mobile-menu-close{
+   display: none; 
+}
+
 //Mobile
 @media screen and (max-width: 1087px){
 
-.navbar-brand, .navbar-tabs{
-  position: relative;
-  z-index: 2;
-}
-
-.navbar.is-shown .navbar-menu{display: block;}
-
-.navbar.is-shown{
-  .navbar-menu{
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    box-shadow: none;
-    color: #000;
+  .mobile-menu-close{
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ebebeb;
+    z-index: 9999;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
   }
 
-  .navbar-dropdown{
-    background: transparent;
-    box-shadow: none;
+  .navbar-brand, .navbar-tabs{
     position: relative;
+    z-index: 2;
   }
 
-  .navbarTextOptions{
-
-  }
-
-  .navbar-start, .navbar-end{
+  .navbar.navbar-is-shown .navbar-menu{
     display: block;
   }
 
-}
+  .navbar.navbar-is-shown{
+    .navbar-menu{
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      background: #fff;
+      z-index: 999;
+      max-height: 100%;
+      box-shadow: 0 0 48px 2px rgba(0, 0, 0, 0.7);
+      border-radius: 8px;
+      color: #000;
+    }
+
+    .navbar-dropdown{
+      background: transparent;
+      box-shadow: none;
+      position: relative;
+
+      .navbar-item{
+        display: flex;
+      }
+    }
+
+    .navbarTextOptions{
+
+    }
+
+    .navbar-start, .navbar-end{
+      display: block;
+    }
+
+  }
 }

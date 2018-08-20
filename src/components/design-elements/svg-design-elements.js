@@ -7,3 +7,10 @@ export const BottomArc = props => (
   </svg>
 );
 
+
+export const BottomWave = props => (
+  <svg viewBox="0 0 1584 55" {...props}>
+    <title>bottom-bg-wave</title>
+    <path d="M0 54.2h1584V18.3c-270 23.3-537.7 23.3-803 0C515.7-5 256.7-5 0 18.3v35.9z"/>
+  </svg>
+)

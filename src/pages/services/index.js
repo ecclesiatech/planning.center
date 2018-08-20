@@ -9,7 +9,7 @@ import s1Image1 from "../../images/bgs/services/section-1/image-1.png";
 import Layout from "../../components/layout";
 import AppSubNavBar from "../../components/AppSubNavBar";
 import Icon from "../../components/icon";
-import { BottomArc } from "../../components/design-elements/design-elements";
+import { BottomArc, BottomWave } from "../../components/design-elements/svg-design-elements";
 
 class ServicesIndex extends React.Component {
   render() {
@@ -117,7 +117,7 @@ class ServicesIndex extends React.Component {
                   </div>
                 </Tabs>
               </div>
-              <BottomArc className="design-element absolute bottom-0" style={{ fill: 'F2FBFF' }} />
+              <BottomWave className="design-element absolute bottom-0" style={{ fill: 'FAFDFF' }} />
             </section>
 
           </React.Fragment>}

@@ -6,10 +6,26 @@
   font-weight: 700;
   width: 100%;
   top: 0;
-  min-height: 68px;
+  min-height: 55px;
   margin-bottom: 0 !important;
+  @media screen and (min-width: 1088px){
+    min-height: 68px;
+  }    
 
-  a{text-decoration: none !important;}
+  a{
+    text-decoration: none !important;
+    @media screen and (max-width: 1087px){
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-align: left;
+      padding-left: 32px;
+      padding-right: 32px;
+      &:hover{
+        background: transparent;
+        color: #333;
+      }
+    }    
+  }
 }
 
 .navbarTextOptions{
@@ -32,7 +48,7 @@
 
 .navbar-mobile-trigger{
   display: none;
-  @media screen and (max-width: 1088px){
+  @media screen and (max-width: 1087px){
     display: block;
   }
   margin-left: auto;
@@ -62,7 +78,7 @@
     height: 24px;    
   }
   .navbar-brand{
-    @media screen and (max-width: 1088px){
+    @media screen and (max-width: 1087px){
       display: flex;
       width: 100%;
     }    
@@ -77,7 +93,8 @@
 }
 
 //The navbar (TOPBAR) state on product pages 
-.app-page .topbar{
+.app-page .topbar,
+.app-page .topbar.navbar-is-shown{
   .pc-logo-color{
     // hide the color logo
     display: none;
@@ -108,7 +125,7 @@
 }
 
 //The navbar state on product pages AFTER scrolling
-.app-page.navbar-is-scrolling .topbar {
+.app-page.navbar-is-scrolling .topbar{
   .navbar-menu-container > a,
   .has-dropdown > a,
   .navbar-end > a{
