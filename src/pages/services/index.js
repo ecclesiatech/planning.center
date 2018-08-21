@@ -24,12 +24,12 @@ class ServicesIndex extends React.Component {
               <title>{siteTitle}</title>
               <body inverse="true" toggleable="true" className={layoutState.isTop ? `navbar-is-top app-page ${appName}` : `navbar-is-scrolling app-page ${appName}`} />
             </Helmet>
-            <section className="hero">
+            <section className="hero section">
               <div className="hero-body container">
-                <div className="columns is-6">
-                  <div className="column">
+                <div className="columns is-8 is-variable">
+                  <div className="column column-text">
                     <header style={{ marginBottom: "48px" }}>
-                      <Icon symbol="apps#services-badge" style={{ height: "64px", width: "247px", marginBottom: "30px" }} />
+                      <Icon symbol="apps#services-badge" className="app-icon" />
                       <h1>Lead powerful services with unified teams.</h1>
                     </header>
 
@@ -47,7 +47,7 @@ class ServicesIndex extends React.Component {
                     </ul>
                   </div>
 
-                  <div className="column" style={{ justify: "flex-end", textAlign: "right" }}>
+                  <div className="column column-image">
                     <img src={heroImage} style={{ height: "470px", display: "inline-block", margin: "0" }} alt="" />
                   </div>
                 </div>
