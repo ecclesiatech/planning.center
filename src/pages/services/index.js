@@ -6,6 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import heroImage from "./services.svg";
 import s1Image1 from "../../images/bgs/services/section-1/image-1.png";
 import Icon from "../../components/icon";
+import * as components from "../../components/icons/feature-icons";
 import { ServicesLive, MusicStand} from "../../images/illustrations/simple-bits";
 import { BottomArc, BottomWave } from "../../components/design-elements/svg-design-elements";
 
@@ -180,71 +181,96 @@ class ServicesIndex extends React.Component {
                 </div>
               </div>
             </section>
-            <section className="section--brand-color section is-medium section--content-wrap relative has-text-white">
+            <section className="section--brand-color has-after-fade section is-medium section--content-wrap relative has-text-white">
               <div className="container" >
                 <header className="section-header">
                   <h1 className="section-header__main section-header__main-underline is-white">More Things You Can Do With Services </h1>
-                </header>              
+                </header>
 
-                <ul className="columns is-multiline is-variable is-8">
+                <ul className="feature-list columns is-multiline is-variable is-8">
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app"/>
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.ChartBar /></span>
                       Reporting 
                     </h3>
-                    Create custom reports to evaluate info on people, song selection,scheduling, service length and more!
+                    <span className="feature-list__body">
+                      Create custom reports to evaluate info on people, song selection,scheduling, service length and more!
+                    </span>
                   </li>
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app" />
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.Lock /></span>
                       Permission Levels
                     </h3>
-                    Keep your database clean and secure by assigning different permissions to staff and volunteers.
+                    <span className="feature-list__body">
+                      Keep your database clean and secure by assigning different permissions to staff and volunteers.
+                    </span>
                   </li>
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app" />
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.Layouts /></span>
                       Stage Layouts 
                     </h3>
-                    Place your team where you want your team with color-coded stage layouts, and save plans as templates for later!
+                    <span className="feature-list__body">
+                      Place your team where you want your team with color-coded stage layouts, and save plans as templates for later!
+                    </span>
                   </li>
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app"/>
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.MediaLibrary/></span>
                       Media Library  
                     </h3>
-                    Hold on to photos, videos and documents so you can use them again during later services.
+                    <span className="feature-list__body">
+                      Hold on to photos, videos and documents so you can use them again during later services.
+                    </span>
                   </li>
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app" />
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.ClockAlarm /></span>
                       Household Scheduling 
                     </h3>
-                    Families can plan their service times together by sharing their volunteer schedules with each other.
+                    <span className="feature-list__body">
+                      Families can plan their service times together by sharing their volunteer schedules with each other.
+                    </span>
                   </li>
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app" />
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.Calendar /></span>
                       Calendar Subscription 
                     </h3>
-                    People can subscribe to their volunteer schedules from their personal calendar applications.
+                    <span className="feature-list__body">
+                      People can subscribe to their volunteer schedules from their personal calendar applications.
+                    </span>
                   </li>
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app"/>
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.MobileDevice /></span>
                       Mobile app 
                     </h3>
-                    Everyone can access the main features in Services on the go using our mobile app, available for iOS and Android.
+                    <span className="feature-list__body">
+                      Everyone can access the main features in Services on the go using our mobile app, available for iOS and Android.
+                    </span>
                   </li>
                   <li className="column is-one-third">
-                    <h3 className="">
-                      <Icon symbol="apps#services-app" />
+                    <h3 className="feature-list__heading">
+                      <span className="feature-list__icon"><components.Integrations /></span>
                       Integrations
                     </h3>
-                    We integrate with many web-based applications, like SongSelect and PraiseCharts. For a full list click: 
+                    <span className="feature-list__body">
+                      We integrate with many web-based applications, like SongSelect and PraiseCharts. For a full list click: 
+                    </span>
                   </li>                                
                 </ul>
 
+              </div>
+            </section>
+
+            <section id="pricing" name="#pricing" className="section--extra-light-color section is-medium section--content-wrap relative">
+              <div className="container" style={{paddingBottom: '30px'}}>
+                <header className="section-header">
+                  <h1 className="section-header__main">Plans and Pricing</h1>
+                  <h2 className="section-header__sub">Planning Center Resources is priced by the number of rooms you need to manage. All plans include unlimited events, resources, & administrators.</h2>
+                </header>
               </div>
             </section>
 

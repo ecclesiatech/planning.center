@@ -44,6 +44,10 @@
   padding-bottom: 84px; //Add padding to offset navbar being removed from the flow
 }
 
+.section svg{
+  fill: currentColor;
+}
+
 .section--content-wrap{
   padding-top: 112px;
   padding-bottom: 112px;
@@ -89,10 +93,43 @@
   font-weight: 400;
   opacity: 0.9;
   margin-bottom: 40px;
+  line-height: 1.4;
 
   @include bp(from-mobile) {
     margin-bottom: 88px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+.has-after-fade.section--brand-color{
+  box-shadow: 
+  0 -16px 0 #B5CCFF inset, 
+  0 -32px 0 #85ABFF inset, 
+  0 -48px 0 #5389FF inset;
+}
+
+.feature-list{
+  .column{
+    margin-bottom: 3em;
+  }
+}
+
+.feature-list__heading{
+  font-size: 1.25em;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.feature-list__body{
+  max-width: 80%;
+  display: block;
+}
+
+.feature-list__icon{
+  font-size: 1.1em;
+  margin-right: 12px;
 }
 
 //Product page tabs
