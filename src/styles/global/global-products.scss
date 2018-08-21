@@ -45,11 +45,30 @@
 }
 
 .section--content-wrap{
-  padding: 112px 0;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .section-header{
   text-align: center;
+}
+
+.section-header__main-underline{
+  position: relative;
+  margin-bottom: 118px;
+  &:after{
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    width: 100px;
+    height: 5px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  &.is-white:after{
+    background: rgba(255,255,255,0.3);
+  }
 }
 
 .section-header__lead{
@@ -143,6 +162,7 @@
     opacity: 1;
   }
 }
+
 .product-tabs .react-tabs__tab--selected{
   background: hsla(221, 100%, 62%, 0.08);
 }
@@ -173,3 +193,5 @@
 //Section background colors
 .section--extra-light-color{background: $extra-light-blue;}
 .section--light-color{background: $light-blue;}
+.section--high-contrast{@include linear-gradient(90deg, #1E2946, #172E49);}
+.section--brand-color{background: $pc-blue;}

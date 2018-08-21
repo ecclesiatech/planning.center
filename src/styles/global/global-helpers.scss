@@ -21,6 +21,7 @@
   flex-direction: row-reverse;
 }
 
+//Show / Hide
 .show-only-on-touch{
   @media screen and (min-width: 1088px) {
     display: none;    
@@ -30,6 +31,10 @@
 //Typography
 .ta-r{
   text-align: right;
+}
+
+.has-text-white{
+  color: #fff;
 }
 
 // Lists
