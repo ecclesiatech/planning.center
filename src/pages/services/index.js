@@ -7,7 +7,7 @@ import heroImage from "./services.svg";
 import s1Image1 from "./features/section-1/image-1.png";
 import Icon from "../../components/icon";
 import * as components from "../../components/icons/feature-icons";
-import { ServicesLive, MusicStand} from "../../images/illustrations/simple-bits";
+import { ServicesLive, MusicStand, Calculator, Gift} from "../../images/illustrations/simple-bits";
 import { BottomArc, BottomWave } from "../../components/design-elements/svg-design-elements";
 
 import Layout from "../../components/layout";
@@ -268,14 +268,52 @@ class ServicesIndex extends React.Component {
             </section>
 
             <section id="pricing" name="#pricing" className="section section-pricing is-medium section--content-wrap relative">
-              <div className="pricing-container" style={{paddingBottom: '30px'}}>
+
+              <div className="pricing-container container">
                 <header className="section-header">
                   <h1 className="section-header__main">Plans and Pricing</h1>
                   <h2 className="section-header__sub">Planning Center Resources is priced by the number of rooms you need to manage. All plans include unlimited events, resources, & administrators.</h2>
                 </header>
 
                 <PricingTable />
+              
+                <div className="columns is-variable is-4">
+                  <div className="column pricing-alternative">
+                    <div className="card">
+                      <article className="media">
+                        <figure className="media-left" style={{ marginRight: "1.7rem" }}>
+                          <Gift style={{ height: "48px" }} />
+                        </figure>
+                        <div className="media-content">
+                          <h2 className="pricing-alt-header">Looking for a free plan?</h2>
+                          <p>
+                            We’ve got one! Limited to managing 2 rooms.
+                            <a href="" className="is-block">Start with the free plan</a>
+                          </p>
+                        </div>
+                      </article>
+                    </div>      
+                  </div>
+                  <div className="column pricing-alternative">
+                    <div className="card">
+                      <article className="media">
+                        <figure className="media-left" style={{ marginRight: "1.7rem" }}>
+                          <Calculator style={{ height: "48px" }} />
+                        </figure>
+                        <div className="media-content">
+                          <h2 className="pricing-alt-header">Want the whole Planning Center system?</h2>
+                          <p>
+                            Our calculator can help you price it out.
+                            <a href="" className="is-block">Show me the calculator</a>
+                          </p>
+                        </div>
+                      </article>
+                    </div>           
+                  </div>
+                </div>                
               </div>
+
+
             </section>
 
           </React.Fragment>}

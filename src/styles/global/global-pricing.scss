@@ -1,17 +1,25 @@
 //pricing table and page
 
-.pricing-table.columns{
-  @include bp(from-tablet) {
-    justify-content: center;
+.section-pricing{
+  background-image: url(../../images/bgs/blob-big-stipple.svg);
+  background-position: 50% 200px;
+  background-repeat: no-repeat;
+}
+
+.section-pricing .section-header__sub{
+  @include bp(from-mobile) {
+    margin-bottom: 48px;
   }
 }
 
+.pricing-table.columns{
+  margin-bottom: 64px;
+  justify-content: center;
+}
+
 .pricing-table .column{
-  @include bp(from-tablet) {
-    max-width: 200px;
-    flex-basis: 192px;
-    flex-grow: 0;
-    flex-shrink: 0;
+  @media screen and (min-width: 1300px) {
+    flex-basis: 186px;
   }
 }
 
@@ -21,12 +29,20 @@
   border-radius: 8px;
   box-shadow: none;
   border: 1px solid #E0E0E0;
+  @include bp(to-mobile) {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }  
 }
 
-.section-pricing{
-  background-image: url(../../images/bgs/blob-big-stipple.svg);
-  background-position: 50% 180px;
-  background-repeat: no-repeat;
+.pricing-table .pricing-content,
+.pricing-table .button{
+  @include bp(to-mobile) {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
 }
 
 .pricing-h1,
@@ -36,7 +52,10 @@
 }
 
 .pricing-h1{
-  font-size: 2.75rem;
+  font-size: 1.75rem;
+  @include bp(from-mobile) {
+    font-size: 2.75rem;
+  }    
 }
 
 .pricing-h2{
@@ -44,15 +63,14 @@
   font-weight: 800;
 }
 
-.pricing-body{
-
-}
-
 .pricing-button{
-  margin-top: 44px;
+  
+  @include bp(from-mobile) {
+    margin-top: 44px;
+    width: 100%;
+  }
   padding: 8px;
   height: auto;
-  width: 100%;
   border-radius: 6px;
   color: $pc-blue;
   font-size: 14px;
@@ -60,4 +78,36 @@
   background: #F4FAFF;
   border-color: #DEEFFF;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05)
+}
+
+.pricing-alternative{
+  
+  .card{
+    padding: 42px;
+    border-radius: 8px;
+    box-shadow: none;
+    @include linear-gradient(45deg, rgba(255,255,255,0.2), #F4FAFF);
+
+    @include bp(from-widescreen) {
+      display: flex;
+    }
+  }
+
+  .media{
+    margin: 0 auto;
+    @include bp(from-widescreen) {
+      max-width: 460px;
+    }
+  }
+
+  .pricing-alt-header{
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+
+  a{
+    margin-top: 6px;  
+  }
+
 }
