@@ -128,15 +128,15 @@
     @media (max-width: 768px) { @content; }
   }
   @if $point == from-mobile {
-    //until 768px
+    //until 769px
     @media (min-width: 769px) { @content; }
   }  
   @else if $point == to-tablet {
-    //until 769px    
+    //until 1023px    
     @media (max-width: 1023px) { @content; }
   }
   @else if $point == from-tablet {
-    //from 769px    
+    //from 1024px    
     @media (min-width: 1024px) { @content; }
   }
   @else if $point == tablet-only {
@@ -148,7 +148,7 @@
     @media (max-width: 1023px) { @content; }
   }
   @else if $point == to-desktop {
-    //until 1024px
+    //until 1023px
     @media (max-width: 1023px) { @content; }
   }
   @else if $point == from-desktop {

@@ -12,7 +12,7 @@ import "../styles/global/_all.scss";
 class Template extends React.Component {
   state = {
     isTop: true,
-  };
+  };  
 
   componentDidMount() {
     document.addEventListener('scroll', () => {

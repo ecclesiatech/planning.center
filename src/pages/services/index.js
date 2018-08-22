@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import heroImage from "./services.svg";
-import s1Image1 from "../../images/bgs/services/section-1/image-1.png";
+import s1Image1 from "./features/section-1/image-1.png";
 import Icon from "../../components/icon";
 import * as components from "../../components/icons/feature-icons";
 import { ServicesLive, MusicStand} from "../../images/illustrations/simple-bits";
@@ -12,6 +12,7 @@ import { BottomArc, BottomWave } from "../../components/design-elements/svg-desi
 
 import Layout from "../../components/layout";
 import AppSubNavBar from "../../components/AppSubNavBar";
+import PricingTable from "../../components/PricingTable";
 
 class ServicesIndex extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class ServicesIndex extends React.Component {
               <title>{siteTitle}</title>
               <body inverse="true" toggleable="true" className={layoutState.isTop ? `navbar-is-top app-page ${appName}` : `navbar-is-scrolling app-page ${appName}`} />
             </Helmet>
+
             <section className="hero section">
               <div className="hero-body container">
                 <div className="columns is-8 is-variable">
@@ -47,7 +49,7 @@ class ServicesIndex extends React.Component {
                     </ul>
                   </div>
 
-                  <div className="column column-image">
+                  <div className="column column-image is-hidden-mobile">
                     <img src={heroImage} style={{ height: "470px", display: "inline-block", margin: "0" }} alt="" />
                   </div>
                 </div>
@@ -85,7 +87,7 @@ class ServicesIndex extends React.Component {
                   </div>
                 </Tabs>
               </div>
-              <BottomArc className="design-element absolute bottom-0" style={{ fill: 'F2FBFF'}} />
+              <BottomArc className="section-divide-shape absolute bottom-0" style={{ fill: 'F2FBFF'}} />
             </section>
 
             <section className="section--light-color section is-medium section--content-wrap relative">
@@ -114,7 +116,7 @@ class ServicesIndex extends React.Component {
                   </div>
                 </Tabs>
               </div>
-              <BottomWave className="design-element absolute bottom-0" style={{ fill: 'FAFDFF' }} />
+              <BottomWave className="section-divide-shape absolute bottom-0" style={{ fill: 'FAFDFF' }} />
             </section>
 
             <section className="section--extra-light-color section is-medium section--content-wrap relative">
@@ -265,12 +267,14 @@ class ServicesIndex extends React.Component {
               </div>
             </section>
 
-            <section id="pricing" name="#pricing" className="section--extra-light-color section is-medium section--content-wrap relative">
-              <div className="container" style={{paddingBottom: '30px'}}>
+            <section id="pricing" name="#pricing" className="section section-pricing is-medium section--content-wrap relative">
+              <div className="pricing-container" style={{paddingBottom: '30px'}}>
                 <header className="section-header">
                   <h1 className="section-header__main">Plans and Pricing</h1>
                   <h2 className="section-header__sub">Planning Center Resources is priced by the number of rooms you need to manage. All plans include unlimited events, resources, & administrators.</h2>
                 </header>
+
+                <PricingTable />
               </div>
             </section>
 

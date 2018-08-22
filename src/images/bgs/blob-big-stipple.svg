@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="506px" viewBox="0 0 736 506" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" width="8" height="8" x="397.60447" y="255.306196" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2"></use>
+        </pattern>
+        <image id="image-2" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAYRpQ0NQSUNDIFByb2ZpbGUAACiRlZE/SMNAFMa/VKQO9c9QRJwCSqcqtYJUEKHtIEKHWjqo6JBe0rRQ05DGqugo6FhwEF0Uuzg461pw1UlRBHFwci+6aInvkmoqouIH4f3y7t29e98BnmNJ1wueHmBJM43UVEycnZsXvY/ogB+2JFbSo8lkgvNH/KqXGwg8Xg3xs76v/yqfrJQYIPBuJtMNk3ibeGDF1DmfEPsNuhRxjbPq8DXnjMNPdk06FSd+I+4qM5X2enzEIU3Oa8QTxJMsJ8nEG8TBTEu92sLOfWz1x6VCPmNIpiKL3Jp4sVA0SrrElH8O+ZdMZdXkMV7U14y8mjPFKDmpiNMaGw6K4dBIBODv4lTXZ2y/hd4LN1c8BCLPQFvFzWV2gbMtoO/OzQ0eAN2bwOk5WzbKzfYCqLvjWfNf+CT8xI6vtsaA6i2QXgcSl8DePhDIUp8FINlJ+XGacNH9HJWyo2HnLF8MaH+wrHoA8O4AjYplvR5ZVqNK89wDNe0dLYVvmBABVyYAAAAXSURBVBgZY2BgYPgPxUAKEzBhCg1HEQAE8AIBRiFxDgAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.0799999982">
+        <g id="Services-Page" transform="translate(-410.000000, -4654.000000)" fill="url(#pattern-1)" stroke="#E2F2FF">
+            <g id="Pricing" transform="translate(0.000000, 4389.156250)">
+                <path d="M1100.58769,568.507444 C1047.71113,631.572907 981.650671,690.727082 925.757247,728.194626 C868.010343,766.169667 817.005335,777.7613 752.353949,760.916906 C688.757566,744.078977 619.243055,708.719003 556.737803,676.875954 C494.644436,643.29707 441.135605,614.479612 417.5751,569.056963 C394.809458,524.943464 402.501579,462.152761 458.145705,395.38289 C512.344623,330.290669 621.18686,264.681254 767.900776,263.439986 C913.288713,260.074986 1049.05518,320.751654 1106.13729,381.564086 C1167.12146,444.02831 1152.56821,505.836342 1100.58769,568.507444" id="Fill-1" style="mix-blend-mode: multiply;" transform="translate(775.830409, 515.880389) rotate(175.000000) translate(-775.830409, -515.880389) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

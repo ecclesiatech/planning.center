@@ -3,13 +3,13 @@
   margin: -68px auto 0;
   padding-top: 68px;
   padding-bottom: 0;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 769px){
     padding-top: 110px;
     position: relative;
   }
 
   .hero-body{
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 769px){
       padding-bottom: 80px;
     }    
   }
@@ -20,7 +20,7 @@
       height: 42px;
       padding-left: 18px;
       padding-right: 18px;       
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 769px){
         font-size: 1.2rem;
         font-weight: 700;
         line-height: 1;
@@ -39,7 +39,7 @@
 
 .hero .app-icon{
   height: 54px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 769px){
    height: 64px;
   }
   width: 247px;
@@ -60,14 +60,11 @@
       justify: flex-end;
       textAlign: right;
       padding: 0;
-    }
-    @media screen and (max-width: 767px){
-      display: none;
-    }    
+    } 
   }
 
   .column-text{
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 768px){
       padding-left: 0;
       padding-right: 0;
       h1{
@@ -79,7 +76,7 @@
 
 .app-page .hero-body{
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 769px){
     h1{
       font-size: 4.2rem;
     }
@@ -93,6 +90,10 @@
 
 .section svg{
   fill: currentColor;
+}
+
+.section .section-divide-shape{
+  width: 100%;
 }
 
 .section--content-wrap{
