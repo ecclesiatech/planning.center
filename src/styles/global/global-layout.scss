@@ -77,15 +77,15 @@ table th {
   background-repeat: no-repeat;
   background-image: url(../../images/bgs/blob-filled.svg);
 
-  &.blob-color-med{
-    fill: rgba($pc-blue, 0.2)
+  &.blob-filled--color-med{
+    opacity: 0.1;
   }
 
   &.blob-filled.blob-absolute{
     position: absolute;
     width: 100%;
-    height: 120%;
+    height: 122%;
     top: -30px;
-    opacity: 0.1;    
+    right: -12%;   
   }
 }

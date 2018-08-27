@@ -61,7 +61,7 @@ class SupportBlock extends React.Component {
               </div>
 
               <div className="relative" style={{ maxWidth: "640px" }}>
-                <div className="blob-filled blob-color-med blob-absolute">&nbsp;</div>
+                <div className="blob-filled blob-filled--color-med blob-absolute">&nbsp;</div>
                 <div className={[styles.supportVideo, "video wistia-responsive"].join(" ")}>
                   <WistiaPlayer id="vn1v5r7j28">
                     <img src={supportPosterFrame} style={{ display: "block", margin: "0" }} alt="" />
