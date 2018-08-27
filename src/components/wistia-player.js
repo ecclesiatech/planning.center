@@ -15,6 +15,7 @@ class WistiaPlayer extends Component {
   static defaultProps = {
     tag: "div",
     popover: true,
+    responsive: "true",
   };
 
   state = {

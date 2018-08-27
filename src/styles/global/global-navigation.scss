@@ -2,7 +2,7 @@
 
 .navbar.topbar{
   position: relative;
-  z-index: 99992;
+  z-index: 9992;
   font-weight: 700;
   width: 100%;
   top: 0;
@@ -76,7 +76,10 @@
 
 .navbar-is-scrolling {
   nav.topbar {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(251,251,251,1);
   }
 }

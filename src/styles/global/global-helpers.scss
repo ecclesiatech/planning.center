@@ -17,6 +17,12 @@
   flex: 1;
 }
 
+.is-flex-961{
+  @media screen and (min-width: 961px){
+    display: flex;
+  }
+}
+
 .columns--flip-sides{
   flex-direction: row-reverse;
 }

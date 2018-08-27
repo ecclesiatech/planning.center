@@ -1,6 +1,7 @@
 import React from 'react'
 import WistiaPlayer from "../components/wistia-player";
 import styles from "../styles/modules/support.module.scss"
+import { Calendar, Stopwatch, Padlock } from "../images/illustrations/simple-bits";
 
 import supportPosterFrame from "../images/misc/support-frame.jpg";
 
@@ -20,24 +21,22 @@ class SupportBlock extends React.Component {
               </h2>
             </header>
 
-            <div className="columns is-2 is-variable">
-              <div className="column is-narrow">
-                <article className="media is-borderless">
-                  <figure className="media-left" style={{ marginRight: "1.7rem" }}>
-                    {/*<Calculator style={{ height: "48px" }} />*/}
-                    ICON
+            <div className="is-flex-961">
+              <div className={styles.supportList}>
+                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{minWidth: "300px", maxWidth: "366px", alignItems: "center"}}>
+                  <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
+                    <Stopwatch style={{ width: "69px" }} />
                   </figure>
                   <div className="media-content">
                     <h3 className="media-alt-header">
-                      Want the whole Planning Center system?
+                      1-hour Responses
                     </h3>
-                    <p>Our calculator can help you price it out.</p>
+                    <p>Receive an answer to your question in one business hour, M-F.</p>
                   </div>
                 </article>
-                <article className="media is-borderless">
-                  <figure className="media-left" style={{ marginRight: "1.7rem" }}>
-                    {/*<Calculator style={{ height: "48px" }} />*/}
-                    ICON 2
+                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{minWidth: "300px", maxWidth: "366px", alignItems: "center"}}>
+                  <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
+                    <Calendar style={{ width: "66px" }} />
                   </figure>
                   <div className="media-content">
                     <h3 className="media-alt-header">Sunday Support</h3>
@@ -46,10 +45,9 @@ class SupportBlock extends React.Component {
                     </p>
                   </div>
                 </article>
-                <article className="media is-borderless">
-                  <figure className="media-left" style={{ marginRight: "1.7rem" }}>
-                    {/*<Calculator style={{ height: "48px" }} />*/}
-                    ICON 3
+                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{minWidth: "300px", maxWidth: "366px", alignItems: "center"}}>
+                  <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
+                    <Padlock style={{ width: "56px" }} />
                   </figure>
                   <div className="media-content">
                     <h3 className="media-alt-header">Open Door</h3>
@@ -60,8 +58,8 @@ class SupportBlock extends React.Component {
                 </article>
               </div>
 
-              <div className="column relative">
-                <div className={[styles.supportVideo, "video"].join(" ")}>
+              <div className="relative">
+                <div className={[styles.supportVideo, "video wistia-responsive"].join(" ")}>
                   <WistiaPlayer
                     id="vn1v5r7j28"
                   >
