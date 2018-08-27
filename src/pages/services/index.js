@@ -324,10 +324,8 @@ class ServicesIndex extends React.Component {
                 </div>                
               </div>
             </section>
-
-            <section className="section section-support section--light-color is-medium section--content-wrap relative">            
-              <SupportBlock />
-            </section>
+            {/*SUPPORT SECTION*/}
+            <SupportBlock className="foo" />
 
           </React.Fragment>}
       </Layout>;

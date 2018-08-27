@@ -5,7 +5,7 @@ import {IconFacebook} from "../../components/icons/planning-center-icons";
 import {IconInstagram} from "../../components/icons/planning-center-icons";
 import {IconTwitter} from "../../components/icons/planning-center-icons";
 import {IconYouTube} from "../../components/icons/planning-center-icons";
-import styles from "../../styles/footer.module.scss";
+import styles from "../../styles/modules/footer.module.scss";
 
 const Footer = () => {
   return <footer className={[styles.footer, "bd-main"].join(" ")}>
