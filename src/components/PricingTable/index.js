@@ -23,7 +23,7 @@ class PricingTable extends React.Component {
               </header>
               <p className="pricing-body">$14 a month</p>
             </div>
-            <button className="button pricing-button">Start free trial</button>
+            <button className="button button-ice pricing-button">Start free trial</button>
           </div>
         </div>
         <div className="column">
@@ -35,7 +35,7 @@ class PricingTable extends React.Component {
               </header>
               <p className="pricing-body">$29 a month</p>
             </div>
-            <button className="button pricing-button">Start free trial</button>
+            <button className="button button-ice pricing-button">Start free trial</button>
           </div>
         </div>
         <div className="column">
@@ -47,7 +47,7 @@ class PricingTable extends React.Component {
               </header>
               <p className="pricing-body">$59 a month</p>
             </div>
-            <button className="button pricing-button">Start free trial</button>
+            <button className="button button-ice pricing-button">Start free trial</button>
           </div>
         </div>
         <div className="column">
@@ -59,7 +59,7 @@ class PricingTable extends React.Component {
               </header>
               <p className="pricing-body">$99 a month</p>
             </div>
-            <button className="button pricing-button">Start free trial</button>
+            <button className="button button-ice pricing-button">Start free trial</button>
           </div>
         </div>
         <div className="column">
@@ -71,7 +71,7 @@ class PricingTable extends React.Component {
               </header>
               <p className="pricing-body">$149 a month</p>
             </div>
-            <button className="button pricing-button">Start free trial</button>
+            <button className="button button-ice pricing-button">Start free trial</button>
           </div>
         </div>
         <div className="column">
@@ -83,7 +83,7 @@ class PricingTable extends React.Component {
               </header>
               <p className="pricing-body">$199 a month</p>
             </div>
-            <button className="button pricing-button">Start free trial</button>
+            <button className="button button-ice pricing-button">Start free trial</button>
           </div>
         </div>
 

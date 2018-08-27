@@ -1,0 +1,17 @@
+//BUTTONS
+.button-ice{
+  padding: 8px;
+  height: auto;
+  border-radius: 6px;
+  color: $pc-blue;
+  font-size: 14px;
+  font-weight: 800;
+  background: #F4FAFF;
+  border-color: #DEEFFF;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.05);
+
+  &:hover{
+    border-color: #b8deff;
+    color: darken( $pc-blue, 10% );
+  }  
+}

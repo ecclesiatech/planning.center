@@ -3,6 +3,9 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
+import WistiaPlayer from "../../components/wistia-player";
+import SupportBlock from "../../components/customer-support-block";
+
 import heroImage from "./services.svg";
 import s1Image1 from "./features/section-1/image-1.png";
 import Icon from "../../components/icon";
@@ -42,9 +45,17 @@ class ServicesIndex extends React.Component {
                         </button>
                       </li>
                       <li>
-                        <button className="button is-medium is-black">
+                        {/*<button className="button is-medium is-black">
                           Watch Video
-                        </button>
+                          </button>*/}
+                        <WistiaPlayer
+                          id="6a4fn16ith"
+                          style={{}}
+                        >
+                          <button className="button is-medium is-black">
+                            Watch Video
+                          </button>
+                        </WistiaPlayer>                        
                       </li>
                     </ul>
                   </div>
@@ -285,7 +296,7 @@ class ServicesIndex extends React.Component {
                           <Gift style={{ height: "48px" }} />
                         </figure>
                         <div className="media-content">
-                          <h2 className="pricing-alt-header">Looking for a free plan?</h2>
+                          <h2 className="media-alt-header">Looking for a free plan?</h2>
                           <p>
                             We’ve got one! Limited to managing 2 rooms.
                             <a href="" className="is-block">Start with the free plan</a>
@@ -301,7 +312,7 @@ class ServicesIndex extends React.Component {
                           <Calculator style={{ height: "48px" }} />
                         </figure>
                         <div className="media-content">
-                          <h2 className="pricing-alt-header">Want the whole Planning Center system?</h2>
+                          <h2 className="media-alt-header">Want the whole Planning Center system?</h2>
                           <p>
                             Our calculator can help you price it out.
                             <a href="" className="is-block">Show me the calculator</a>
@@ -312,8 +323,10 @@ class ServicesIndex extends React.Component {
                   </div>
                 </div>                
               </div>
+            </section>
 
-
+            <section className="section section-support section--light-color is-medium section--content-wrap relative">            
+              <SupportBlock />
             </section>
 
           </React.Fragment>}
