@@ -15,26 +15,27 @@ class SupportBlock extends React.Component {
           <div className="support-container container">
             <header className="section-header">
               <h1 className="section-header__main">Customer Support</h1>
-              <h2 className="section-header__sub">
+              <h2 className="section-header__sub section-header-underline">
                 Our team is built of people who work and volunteer in the
                 church and are ready to support you in your goals.
               </h2>
             </header>
 
-            <div className="is-flex-961">
+            <div className="is-flex-961 jc-c">
               <div className={styles.supportList}>
-                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{minWidth: "300px", maxWidth: "366px", alignItems: "center"}}>
+                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{ minWidth: "300px", maxWidth: "366px", alignItems: "center" }}>
                   <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
                     <Stopwatch style={{ width: "69px" }} />
                   </figure>
                   <div className="media-content">
-                    <h3 className="media-alt-header">
-                      1-hour Responses
-                    </h3>
-                    <p>Receive an answer to your question in one business hour, M-F.</p>
+                    <h3 className="media-alt-header">1-hour Responses</h3>
+                    <p>
+                      Receive an answer to your question in one business
+                      hour, M-F.
+                    </p>
                   </div>
                 </article>
-                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{minWidth: "300px", maxWidth: "366px", alignItems: "center"}}>
+                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{ minWidth: "300px", maxWidth: "366px", alignItems: "center" }}>
                   <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
                     <Calendar style={{ width: "66px" }} />
                   </figure>
@@ -45,30 +46,29 @@ class SupportBlock extends React.Component {
                     </p>
                   </div>
                 </article>
-                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{minWidth: "300px", maxWidth: "366px", alignItems: "center"}}>
+                <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{ minWidth: "300px", maxWidth: "366px", alignItems: "center" }}>
                   <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
                     <Padlock style={{ width: "56px" }} />
                   </figure>
                   <div className="media-content">
                     <h3 className="media-alt-header">Open Door</h3>
                     <p>
-                      Any user can contact us to get help, not just administrators.
+                      Any user can contact us to get help, not just
+                      administrators.
                     </p>
                   </div>
                 </article>
               </div>
 
-              <div className="relative">
+              <div className="relative" style={{ maxWidth: "640px" }}>
+                <div className="blob-filled blob-color-med blob-absolute">&nbsp;</div>
                 <div className={[styles.supportVideo, "video wistia-responsive"].join(" ")}>
-                  <WistiaPlayer
-                    id="vn1v5r7j28"
-                  >
+                  <WistiaPlayer id="vn1v5r7j28">
                     <img src={supportPosterFrame} style={{ display: "block", margin: "0" }} alt="" />
                     <button className={[styles.playButton, ""].join(" ")} />
-                  </WistiaPlayer>                    
+                  </WistiaPlayer>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

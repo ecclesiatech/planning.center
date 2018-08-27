@@ -197,7 +197,7 @@ class ServicesIndex extends React.Component {
             <section className="section--brand-color has-after-fade section is-medium section--content-wrap relative has-text-white">
               <div className="container" >
                 <header className="section-header">
-                  <h1 className="section-header__main section-header__main-underline is-white">More Things You Can Do With Services </h1>
+                  <h1 className="section-header__main section-header-underline is-white">More Things You Can Do With Services </h1>
                 </header>
 
                 <ul className="feature-list columns is-multiline is-variable is-8">
