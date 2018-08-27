@@ -24,35 +24,35 @@ class SupportBlock extends React.Component {
             <div className="is-flex-961 jc-c">
               <div className={styles.supportList}>
                 <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{ minWidth: "300px", maxWidth: "366px", alignItems: "center" }}>
-                  <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
+                  <figure className="media-left mb-0" style={{ marginRight: "1.7rem", width: "70px" }}>
                     <Stopwatch style={{ width: "69px" }} />
                   </figure>
                   <div className="media-content">
                     <h3 className="media-alt-header">1-hour Responses</h3>
-                    <p>
+                    <p className="mb-0">
                       Receive an answer to your question in one business
                       hour, M-F.
                     </p>
                   </div>
                 </article>
                 <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{ minWidth: "300px", maxWidth: "366px", alignItems: "center" }}>
-                  <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
+                  <figure className="media-left mb-0" style={{ marginRight: "1.7rem", width: "70px" }}>
                     <Calendar style={{ width: "66px" }} />
                   </figure>
                   <div className="media-content">
                     <h3 className="media-alt-header">Sunday Support</h3>
-                    <p>
+                    <p className="mb-0">
                       We are online Sunday mornings to address emergencies.
                     </p>
                   </div>
                 </article>
                 <article className={[styles.supportListItem, "media is-borderless"].join(" ")} style={{ minWidth: "300px", maxWidth: "366px", alignItems: "center" }}>
-                  <figure className="media-left" style={{ marginRight: "1.7rem", width: "70px" }}>
+                  <figure className="media-left mb-0" style={{ marginRight: "1.7rem", width: "70px" }}>
                     <Padlock style={{ width: "56px" }} />
                   </figure>
                   <div className="media-content">
                     <h3 className="media-alt-header">Open Door</h3>
-                    <p>
+                    <p className="mb-0">
                       Any user can contact us to get help, not just
                       administrators.
                     </p>
