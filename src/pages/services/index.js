@@ -98,7 +98,7 @@ class ServicesIndex extends React.Component {
                   </div>
                 </Tabs>
               </div>
-              <BottomArc className="section-divide-shape absolute bottom-0" style={{ fill: 'F2FBFF'}} />
+              <BottomArc className="section-divide-shape absolute bottom-0" style={{ fill: '#F2FBFF'}} />
             </section>
 
             <section className="section--light-color section is-medium section--content-wrap relative">
@@ -127,7 +127,7 @@ class ServicesIndex extends React.Component {
                   </div>
                 </Tabs>
               </div>
-              <BottomWave className="section-divide-shape absolute bottom-0" style={{ fill: 'FAFDFF' }} />
+              <BottomWave className="section-divide-shape absolute bottom-0" style={{ fill: '#FAFDFF' }} />
             </section>
 
             <section className="section--extra-light-color section is-medium section--content-wrap relative">
