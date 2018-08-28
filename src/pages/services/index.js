@@ -26,7 +26,7 @@ class ServicesIndex extends React.Component {
         {layoutState => <React.Fragment>
             <Helmet>
               <title>{siteTitle}</title>
-              <body inverse="true" toggleable="true" className={layoutState.isTop ? `navbar-is-top app-page ${appName}` : `navbar-is-scrolling app-page ${appName}`} />
+              <body inverse="true" toggleable="true" className={layoutState.isTop ? `navbar-is-top app-page ${appName} has-hero hero-is-reversed` : `navbar-is-scrolling app-page ${appName} has-hero hero-is-reversed`} />
             </Helmet>
 
             <section className="hero section">
@@ -52,7 +52,7 @@ class ServicesIndex extends React.Component {
                           id="6a4fn16ith"
                           style={{}}
                         >
-                          <button className="button is-medium is-black">
+                          <button className="button is-medium is-black nudge-right">
                             Watch Video
                           </button>
                         </WistiaPlayer>                        

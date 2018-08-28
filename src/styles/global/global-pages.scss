@@ -1,97 +1,3 @@
-.app-page .hero{
-  color: #fff;
-  margin: -68px auto 0;
-  padding-top: 68px;
-  padding-bottom: 0;
-  @media screen and (min-width: 769px){
-    padding-top: 110px;
-    position: relative;
-  }
-
-  .hero-body{
-    @media screen and (min-width: 769px){
-      padding-bottom: 80px;
-    }    
-  }
-
-  .hero-buttons{
-    .button{
-      font-size: 1rem;
-      height: 42px;
-      padding-left: 18px;
-      padding-right: 18px;       
-      @media screen and (min-width: 769px){
-        font-size: 1.2rem;
-        font-weight: 700;
-        line-height: 1;
-        height: 53px;
-        padding-left: 24px;
-        padding-right: 24px;      
-      } 
-    }
-
-    .is-black{
-      background: rgba(0,0,0,0.15);
-      margin-left: 12px;
-    }
-  }
-}
-
-.hero .app-icon{
-  height: 54px;
-  @media screen and (min-width: 769px){
-   height: 64px;
-  }
-  width: 247px;
-  margin-bottom: 30px;
-}
-
-.app-page .hero .columns{
-  @media screen and (max-width: 1087px){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column-reverse;
-  }
-
-  .column-image{
-    @media screen and (min-width: 1088px){
-      justify: flex-end;
-      textAlign: right;
-      padding: 0;
-    } 
-  }
-
-  .column-text{
-    @media screen and (max-width: 768px){
-      padding-left: 0;
-      padding-right: 0;
-      h1{
-        max-width: 500px;
-      }
-    } 
-  }
-}
-
-.app-page .hero-body{
-
-  @media screen and (min-width: 769px){
-    h1{
-      font-size: 4.2rem;
-    }
-  }
-}
-
-//
-.navbar-is-scrolling.app-page .hero{
-  padding-bottom: 84px; //Add padding to offset navbar being removed from the flow
-}
-
-.section svg{
-  fill: currentColor;
-}
-
 .section .section-divide-shape{
   width: 100%;
 }
@@ -256,29 +162,10 @@
   background: hsla(221, 100%, 62%, 0.08);
 }
 
+
 //Themeing
 //=================================================================
 //=================================================================
-//Hero Gradients
-.check-ins .hero{@include gradient--chi;}
-.giving .hero{@include gradient--giv;}
-.groups .hero{@include gradient--gro;}
-.music-stand .hero{@include gradient--mus;}
-.people .hero{@include gradient--peo;}
-.registrations .hero{@include gradient--reg;}
-.resources .hero{@include gradient--res;}
-.services .hero{@include gradient--ser;}
-
-//Hero Button Colors
-.check-ins .hero .hero-buttons .is-white{color: $check-ins-color}
-.giving .hero .hero-buttons .is-white{color: $giving-color}
-.groups .hero .hero-buttons .is-white{color: $groups-color}
-.music-stand .hero .hero-buttons .is-white{color: $music-stand-color}
-.people .hero .hero-buttons .is-white{color: $people-color}
-.registrations .hero .hero-buttons .is-white{color: $registrations-color}
-.resources .hero .hero-buttons .is-white{color: $resources-color}
-.services .hero .hero-buttons .is-white{color: $services-color}
-
 //Section background colors
 .section--extra-light-color{background: $extra-light-blue;}
 .section--light-color{background: $light-blue;}

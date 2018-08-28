@@ -45,6 +45,9 @@
 
 .has-text-white{
   color: #fff;
+  svg{
+    fill: currentColor;
+  }
 }
 
 // Lists

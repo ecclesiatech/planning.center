@@ -8,6 +8,7 @@ import "@planningcenter/icons/css/symbol.css";
 
 import "../styles/bulma-import.scss";
 import "../styles/global/_all.scss";
+import "../styles/pages/_all.scss";
 
 class Template extends React.Component {
   state = {
