@@ -9,7 +9,7 @@ import SupportBlock from "../../components/customer-support-block";
 import heroImage from "./services.svg";
 import s1Image1 from "./features/section-1/image-1.png";
 import Icon from "../../components/icon";
-import * as components from "../../components/icons/feature-icons";
+import * as FeatureIcons from "../../components/icons/feature-icons";
 import { ServicesLive, MusicStand, Calculator, Gift} from "../../images/illustrations/simple-bits";
 import { BottomArc, BottomWave } from "../../components/design-elements/svg-design-elements";
 
@@ -203,7 +203,7 @@ class ServicesIndex extends React.Component {
                 <ul className="feature-list columns is-multiline is-variable is-8">
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.ChartBar /></span>
+                      <span className="feature-list__icon"><FeatureIcons.ChartBar /></span>
                       Reporting 
                     </h3>
                     <span className="feature-list__body">
@@ -212,7 +212,7 @@ class ServicesIndex extends React.Component {
                   </li>
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.Lock /></span>
+                      <span className="feature-list__icon"><FeatureIcons.Lock /></span>
                       Permission Levels
                     </h3>
                     <span className="feature-list__body">
@@ -221,7 +221,7 @@ class ServicesIndex extends React.Component {
                   </li>
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.Layouts /></span>
+                      <span className="feature-list__icon"><FeatureIcons.Layouts /></span>
                       Stage Layouts 
                     </h3>
                     <span className="feature-list__body">
@@ -230,7 +230,7 @@ class ServicesIndex extends React.Component {
                   </li>
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.MediaLibrary/></span>
+                      <span className="feature-list__icon"><FeatureIcons.MediaLibrary/></span>
                       Media Library  
                     </h3>
                     <span className="feature-list__body">
@@ -239,7 +239,7 @@ class ServicesIndex extends React.Component {
                   </li>
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.ClockAlarm /></span>
+                      <span className="feature-list__icon"><FeatureIcons.ClockAlarm /></span>
                       Household Scheduling 
                     </h3>
                     <span className="feature-list__body">
@@ -248,7 +248,7 @@ class ServicesIndex extends React.Component {
                   </li>
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.Calendar /></span>
+                      <span className="feature-list__icon"><FeatureIcons.Calendar /></span>
                       Calendar Subscription 
                     </h3>
                     <span className="feature-list__body">
@@ -257,7 +257,7 @@ class ServicesIndex extends React.Component {
                   </li>
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.MobileDevice /></span>
+                      <span className="feature-list__icon"><FeatureIcons.MobileDevice /></span>
                       Mobile app 
                     </h3>
                     <span className="feature-list__body">
@@ -266,7 +266,7 @@ class ServicesIndex extends React.Component {
                   </li>
                   <li className="column is-one-third">
                     <h3 className="feature-list__heading">
-                      <span className="feature-list__icon"><components.Integrations /></span>
+                      <span className="feature-list__icon"><FeatureIcons.Integrations /></span>
                       Integrations
                     </h3>
                     <span className="feature-list__body">

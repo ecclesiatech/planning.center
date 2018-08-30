@@ -7,6 +7,7 @@ import Layout from "../components/layout";
 
 import { BottomArc } from "../components/design-elements/svg-design-elements";
 import heroImage from "./home-hero-balanced-chaos.svg";
+import * as AppLogos from "../components/icons/app-logos";
 
 class BlogIndex extends React.Component {
   render() {
@@ -60,8 +61,7 @@ class BlogIndex extends React.Component {
             <ul className="feature-list columns is-multiline is-variable is-8">
               <li className="column is-one-third">
                 <h3 className="feature-list__heading">
-                  <span className="feature-list__icon"></span>
-                  check-ins 
+                  <span className="feature-list__logo"><AppLogos.CheckInsBadge /></span>
                 </h3>
                 <span className="feature-list__body">
                   Safely and quickly check kids or volunteers in to classrooms and track attendance for any event.
@@ -69,8 +69,7 @@ class BlogIndex extends React.Component {
               </li>
               <li className="column is-one-third">
                 <h3 className="feature-list__heading">
-                  <span className="feature-list__icon"></span>
-                  giving
+                  <span className="feature-list__logo"><AppLogos.GivingBadge /></span>
                 </h3>
                 <span className="feature-list__body">
                   Manage cash, check, and online donations, track donor giving, and issue statements in one system.
@@ -78,8 +77,7 @@ class BlogIndex extends React.Component {
               </li>
               <li className="column is-one-third">
                 <h3 className="feature-list__heading">
-                  <span className="feature-list__icon"></span>
-                  groups
+                  <span className="feature-list__logo"><AppLogos.GroupsBadge /></span>
                 </h3>
                 <span className="feature-list__body">
                   Create a directory for small groups, communicate with members, and track attendance.
@@ -87,8 +85,7 @@ class BlogIndex extends React.Component {
               </li>
               <li className="column is-one-third">
                 <h3 className="feature-list__heading">
-                  <span className="feature-list__icon"></span>
-                  registrations
+                  <span className="feature-list__logo"><AppLogos.RegistrationsBadge /></span>
                 </h3>
                 <span className="feature-list__body">
                   Accept sign-ups, receive payments, and organize the details of events.
@@ -96,8 +93,7 @@ class BlogIndex extends React.Component {
               </li>
               <li className="column is-one-third">
                 <h3 className="feature-list__heading">
-                  <span className="feature-list__icon"></span>
-                  resources
+                  <span className="feature-list__logo"><AppLogos.ResourcesBadge /></span>
                 </h3>
                 <span className="feature-list__body">
                   Track and approve what rooms and resources are being used, who can use them, and when.
@@ -105,8 +101,7 @@ class BlogIndex extends React.Component {
               </li>
               <li className="column is-one-third">
                 <h3 className="feature-list__heading">
-                  <span className="feature-list__icon"></span>
-                  services
+                  <span className="feature-list__logo"><AppLogos.ServicesBadge /></span>
                 </h3>
                 <span className="feature-list__body">
                   Coordinate service plans, schedule volunteers, and provide rehearsal tools for music teams.
