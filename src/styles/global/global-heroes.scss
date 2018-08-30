@@ -9,6 +9,8 @@
 
   .hero-body{
     @media screen and (min-width: 769px){
+      padding-left: 0;
+      padding-right: 0;
       padding-bottom: 80px;
     }    
   }
@@ -20,6 +22,7 @@
   }
 
   .hero-buttons{
+    margin: 0;
     .button{
       font-size: 1rem;
       height: 42px;
@@ -37,6 +40,19 @@
 
     .is-black{
       background: rgba(0,0,0,0.15);
+    }
+    .is-white{
+      border-color: #e8f4ff;
+      box-shadow: 0 4px 7px -3px rgba(92, 96, 107, 0.05);
+      &:hover{
+        background: #fff;
+        color: $pc-blue;
+        border-color: #e8f4ff;
+        box-shadow: 0 6px 8px -3px rgba(92, 96, 107, 0.07);
+      }
+    }
+    .is-primary{
+
     }
     .nudge-right{
       margin-left: 12px;

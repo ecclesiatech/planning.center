@@ -32,9 +32,9 @@ class Template extends React.Component {
 
     return <div className="">
       <NavBar />
-        {header}
-        {typeof children === "function" ? children(this.state) : children}
-        <Footer />
+      {header}
+      {typeof children === "function" ? children(this.state) : children}
+      <Footer />
       </div>;
   }
 }

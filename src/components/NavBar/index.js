@@ -8,11 +8,11 @@ import Icon from "../icon"
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
-      this.showToggleNav = this.showToggleNav.bind(this)
-      this.state = {
-        isActive: false,
-        showHideMobileNav: "js-navbar-is-hidden"
-      }
+    this.showToggleNav = this.showToggleNav.bind(this)
+    this.state = {
+      isActive: false,
+      showHideMobileNav: "js-navbar-is-hidden"
+    }
   };
 
   showToggleNav() {

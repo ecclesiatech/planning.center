@@ -35,7 +35,7 @@ class BlogIndex extends React.Component {
                     </button>
                   </li>
                   <li>
-                    <button className="button button-shadow is-medium is-white nudge-right">
+                    <button className="button has-shadow is-medium is-white nudge-right">
                       Plans and Pricing
                     </button>
                   </li>
