@@ -26,3 +26,48 @@
   }
 
 }
+
+.cta-floating{
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: -130px;
+  z-index: 1;
+  padding: 24px;
+  text-align: center;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #E3E6EB;
+  box-shadow: 0 4px 5px rgba(227, 230, 235, 0.4);
+  
+  @include bp(from-mobile) {
+    display: flex;
+    align-items: center;
+    left: 32px;
+    right: 32px;
+    padding: 42px;
+    text-align: left;
+  }
+
+  @include bp(from-desktop) {
+    max-width: 1059px;
+    margin: 0 auto;
+  }
+
+  .button{
+    width: 100%;
+    margin-top: 1rem;
+    @include bp(from-mobile) {
+      width: auto;
+      margin-top: 0;
+    }    
+  }
+
+}
+
+.home .section.section-support{
+  @include bp(from-desktop) {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}

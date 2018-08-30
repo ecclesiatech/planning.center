@@ -5,6 +5,9 @@ import Helmet from "react-helmet";
 
 import Layout from "../components/layout";
 
+import WistiaPlayer from "../components/wistia-player";
+import SupportBlock from "../components/customer-support-block";
+
 import { BottomArc } from "../components/design-elements/svg-design-elements";
 import heroImage from "./home-hero-balanced-chaos.svg";
 import { ArrowRight } from "../components/icons/planning-center-icons";
@@ -128,13 +131,16 @@ class BlogIndex extends React.Component {
                   <p><Link to="/services/" className="product-exploration-link">Learn more <ArrowRight className="icon-more-arrow" /></Link></p>
                 </li>                              
               </ul>
+              <div className="columns cta-floating">
+                <h2 className="column is-marginless is-paddingless">Ready to start your free trial?</h2>
+                <button className="button is-medium is-primary">Start Free Trial</button>
+              </div>
             </div>
           </div>
           <BottomArc className="section-divide-shape absolute bottom-0 left-0" style={{ fill: '#F2FBFF'}} />
         </section>        
-        <section className="section--light-color section is-medium section--content-wrap relative">
-        
-        </section>
+        {/*SUPPORT SECTION*/}
+        <SupportBlock className="" />        
 
       </React.Fragment>}
       </Layout>;

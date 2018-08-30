@@ -70,7 +70,10 @@
 
 .feature-list{
   .column{
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    @include bp(from-mobile) {
+      margin-bottom: 3em;      
+    }
   }
 }
 
