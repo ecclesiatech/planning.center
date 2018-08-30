@@ -4,8 +4,8 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 
 import Layout from "../components/layout";
+import TrialBanner from "../components/trial-banner";
 
-import WistiaPlayer from "../components/wistia-player";
 import SupportBlock from "../components/customer-support-block";
 
 import { BottomArc } from "../components/design-elements/svg-design-elements";
@@ -141,7 +141,7 @@ class BlogIndex extends React.Component {
         </section>        
         {/*SUPPORT SECTION*/}
         <SupportBlock className="" />        
-
+        <TrialBanner className="" />
       </React.Fragment>}
       </Layout>;
   }

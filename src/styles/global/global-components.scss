@@ -1,0 +1,17 @@
+//Various banners and shared modules
+
+//This banner is just above the footer on most pages
+.cta-trial-banner{
+  padding: 42px;
+  @include linear-gradient(90deg, #3BDCC3, #31D69A);
+
+  @include bp(from-mobile) {
+    padding: 72px;
+  }
+
+  .button{
+    font-weight: 600;
+    padding: 12px 20px;
+    height: auto;    
+  }
+}

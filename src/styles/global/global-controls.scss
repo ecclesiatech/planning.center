@@ -45,3 +45,23 @@
     color: darken( $pc-blue, 10% );
   }  
 }
+
+.button-ghost{
+  background: rgba(255,255,255,0);
+  box-shadow: 0 3px 7px rgba(85, 88, 93, 0.2);
+  border: 2px solid #fff;
+  color: #fff;
+  
+  &:hover{
+    background: rgba(85, 88, 93,0.05);
+    border-color: #fff;
+    color: #fff;
+    box-shadow: 0 4px 9px rgba(85, 88, 93, 0.25);
+  }
+  &:focus{
+    background: rgba(85, 88, 93,0.05);
+    border-color: #fff;
+    color: #fff;
+    box-shadow: 0 2px 3px rgba(85, 88, 93, 0.25);
+  }  
+}
