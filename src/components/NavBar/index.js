@@ -57,7 +57,7 @@ class NavBar extends React.Component {
                 X
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="" className="navbar-item">
+                <Link to="" className="navbar-item navbar-link navbar-main-item">
                   Products
                 </Link>
                 <div className="navbar-dropdown">
@@ -155,17 +155,20 @@ class NavBar extends React.Component {
                 </div>
               </div>
               {/*END PRODUCT DROPDOWN*/}
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item navbar-link navbar-main-item" to="/about">
                 Learn
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item navbar-no-drop navbar-main-item" to="/blog">
                 Pricing
               </Link>
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item navbar-link navbar-main-item" to="/about">
                 About
               </Link>
             </div>
             <div className="navbar-end">
+              <Link className="button navbar-item button-signup" to="/">
+                Sign up
+              </Link>
               <Link className="button is-text navbar-item" to="/login">
                 Log in
               </Link>

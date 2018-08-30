@@ -116,6 +116,40 @@
   }  
 }
 
+.navbar-no-drop{
+  padding-right: 1.25rem;
+}
+
+a.navbar-item:hover, 
+a.navbar-item.is-active, 
+.navbar-link:hover, 
+.navbar-link.is-active{
+  background: transparent;
+  color: #10192e;
+}
+
+.navbar-link{
+  &:after{
+    border-color: lighten($color: $pc-blue, $amount: 10%);
+    margin-top: -0.275em;
+    right: 1.225em;
+    width: 0.525em;    
+    height: 0.525em;    
+  }
+}
+
+.navbar .button.is-text{
+  &:hover{
+    background-color: rgba(201, 224, 255, 0.3);
+  }
+}
+
+.topbar .button-signup{
+  border-color: $pc-blue;
+  border-width: 1px;
+  color: $pc-blue;
+}
+
 //The navbar state on product pages AFTER scrolling
 .app-page.navbar-is-scrolling .topbar{
   .navbar-menu-container > a,
@@ -143,3 +177,4 @@
     }
   }  
 }
+
