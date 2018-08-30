@@ -75,7 +75,7 @@ table th {
   position: relative;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url(../../images/bgs/blob-filled.svg);
+  background-image: url(../images/bgs/blob-filled.svg);
 
   &.blob-filled--color-med{
     opacity: 0.1;
@@ -88,4 +88,13 @@ table th {
     bottom: -24px;
     left: 70px; 
   }
+}
+
+//Additional containers
+.container--med-width{
+@include bp(from-widescreen) {
+  max-width: 1059px;
+  margin-left: auto;
+  margin-right: auto;
+}  
 }

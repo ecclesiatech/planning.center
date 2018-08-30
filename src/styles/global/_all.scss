@@ -1,4 +1,5 @@
 //Manifest for easier import of all global styles
+@import "minireset-modified.scss";//This reset is modified from the Bulma OG. Load here for proper inheritence 
 @import "global-variables.scss";
 @import "global-mixins.scss";
 @import "global-helpers.scss";

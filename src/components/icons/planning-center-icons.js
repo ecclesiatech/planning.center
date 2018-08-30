@@ -76,5 +76,84 @@ export const IconYouTube = props => (
       d="M22.192 7.6a3.184 3.184 0 0 0-2.97-3.369c-2.224-.108-4.493-.15-6.809-.15h-.723c-2.312 0-4.584.042-6.808.15a3.191 3.191 0 0 0-2.967 3.377c-.1 1.477-.144 2.955-.14 4.432s.04 2.954.136 4.435a3.2 3.2 0 0 0 2.967 3.382c2.336.112 4.733.162 7.17.158s4.829-.042 7.17-.158a3.2 3.2 0 0 0 2.97-3.382c.1-1.481.141-2.958.137-4.439s-.036-2.955-.133-4.436zm-12.107 8.34V8.128l5.821 3.9z"
     />
   </svg>
-)
+);
 
+export const ArrowLeft = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M21.299 10.5H8.42l5.924-5.925-2.121-2.121L2.678 12l9.545 9.546 2.121-2.121L8.42 13.5h12.879v-3z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
+
+export const ArrowRight = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M11.753 2.454L9.632 4.575l5.925 5.925H2.678v3h12.879l-5.925 5.925 2.121 2.121L21.299 12l-9.546-9.546z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
+
+export const ArrowUp = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M21.534 12.235l-9.546-9.546-9.546 9.546 2.121 2.121 5.925-5.924v12.879h3V8.432l5.925 5.924 2.121-2.121z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
+
+export const ArrowDown = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M19.413 9.644l-5.925 5.924V2.689h-3v12.879L4.564 9.644l-2.122 2.121 9.546 9.546 9.546-9.546-2.121-2.121z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
+
+export const ChevronLeft = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M14.98 21.546L5.435 12l9.545-9.546 2.122 2.121L9.677 12l7.425 7.425-2.122 2.121z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
+
+export const ChevronRight = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M8.996 21.546l-2.121-2.121L14.299 12 6.875 4.575l2.121-2.121L18.542 12l-9.546 9.546z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
+
+export const ChevronUp = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M19.413 17.113l-7.425-7.425-7.425 7.425-2.121-2.121 9.546-9.546 9.546 9.546-2.121 2.121z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
+
+export const ChevronDown = props => (
+  <svg viewBox="0 0 23.976 24" {...props}>
+    <path
+      fill="currentColor"
+      d="M11.988 18.554L2.442 9.008l2.121-2.121 7.425 7.425 7.425-7.425 2.121 2.121-9.546 9.546z"
+      data-name="Layer 3"
+    />
+  </svg>
+);
